@@ -1,6 +1,6 @@
 # cas-toolbox
 
-**Version:** `2025.7.2` (2025 wk 7 hotfix 2) 
+**Version:** ex: `2025.7.2` -> (2025 wk 7 hotfix 2) 
 
 Will update every monday if there is a code change.
 
