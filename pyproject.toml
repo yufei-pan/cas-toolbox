@@ -15,7 +15,7 @@ dependencies = [
 ]
 authors = [
     { name = "Yufei Pan", email = "pan@zopyr.us" }
-]s
+]
 classifiers = [
     "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
     "Programming Language :: Python :: 3",
