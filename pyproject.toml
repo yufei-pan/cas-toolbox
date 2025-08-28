@@ -1,6 +1,6 @@
 [project]
 name = "cas-toolbox"
-version = "2025.35.2"
+version = "2025.35.3"
 description = "Cluster Automation Scripts Toolbox"
 readme = "README.md"
 requires-python = ">=3.6"
@@ -38,6 +38,7 @@ iotest = "iotest:climain"
 statbtrfs = "statbtrfs:main"
 TSVZ = "TSVZ:__main__"
 tsvz = "TSVZ:__main__"
+statblk = "statblk:main"
 
 
 [project.urls]
