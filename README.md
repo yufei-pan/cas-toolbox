@@ -45,7 +45,8 @@ Use uv:
 ```bash
 uv tool install --with numpy cas-toolbox
 ```
-Note: with numpy, iotest random number generator will perform much better. But it is not necessary for any other scripts
+Note: with numpy, iotest random number generator will perform much better. But it is not used anywhere else.
+
 Use uv to add as dependency:
 ```bash
 uv add cas-toolbox
