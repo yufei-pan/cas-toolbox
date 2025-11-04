@@ -20,6 +20,7 @@ Cluster Automation Scripts Toolbox -
 - resource
 - prettytable
 - ipaddress
+- numpy
 
 ## Includes following single file libs
 - hpcp.py
@@ -29,6 +30,7 @@ Cluster Automation Scripts Toolbox -
 - statbtrfs.py
 - Tee_Logger.py
 - TSVZ.py
+- statblk.py
 
 ## Installation
 Use pip:
@@ -41,8 +43,9 @@ pipx install cas-toolbox
 ```
 Use uv:
 ```bash
-uv tool install cas-toolbox
+uv tool install --with numpy cas-toolbox
 ```
+Note: with numpy, iotest random number generator will perform much better. But it is not necessary for any other scripts
 Use uv to add as dependency:
 ```bash
 uv add cas-toolbox
@@ -54,7 +57,8 @@ uv add cas-toolbox
 - `mssh` / `mssh3` / `multissh` / `multissh3` / `multiSSH3`  
 - `iotest`  
 - `statbtrfs`  
-- `TSVZ` / `tsvz`  
+- `TSVZ` / `tsvz`
+- `statblk`
 
 All with `--help` / `-h` provided.
 
@@ -72,3 +76,4 @@ GPL-3.0-or-later
 - [statbtrfs](https://github.com/yufei-pan/statbtrfs)
 - [Tee_Logger](https://github.com/yufei-pan/Tee_Logger)
 - [TSVZ](https://github.com/yufei-pan/TSVZ)
+- [statblk](https://github.com/yufei-pan/statblk)
