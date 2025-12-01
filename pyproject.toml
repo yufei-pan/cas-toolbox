@@ -1,18 +1,18 @@
 [project]
 name = "cas-toolbox"
-version = "2025.47.2"
+version = "2025.49.1"
 description = "Cluster Automation Scripts Toolbox"
 readme = "README.md"
 requires-python = ">=3.6"
 dependencies = [
     "hpcp==9.41",
-    "multicmd==1.40",
-    "multissh3==6.06",
+    "multicmd==1.41",
+    "multissh3==6.07",
     "simple-iotest==3.61.2",
-    "statbtrfs==0.25",
+    "statbtrfs==0.26",
     "tee-logger==6.37",
     "tsvz==3.35",
-    "statblk==1.34",
+    "statblk==1.35",
 ]
 authors = [
     { name = "Yufei Pan", email = "pan@zopyr.us" }
