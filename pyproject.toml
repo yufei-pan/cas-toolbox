@@ -1,6 +1,6 @@
 [project]
 name = "cas-toolbox"
-version = "2025.51.1"
+version = "2025.52.1"
 description = "Cluster Automation Scripts Toolbox"
 readme = "README.md"
 requires-python = ">=3.6"
@@ -12,7 +12,7 @@ dependencies = [
     "statbtrfs==0.26",
     "tee-logger==6.37",
     "tsvz==3.35",
-    "statblk==1.36",
+    "statblk==1.37",
 ]
 authors = [
     { name = "Yufei Pan", email = "pan@zopyr.us" }
