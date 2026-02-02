@@ -1,6 +1,6 @@
 [project]
 name = "cas-toolbox"
-version = "2026.2.1"
+version = "2026.6.1"
 description = "Cluster Automation Scripts Toolbox"
 readme = "README.md"
 requires-python = ">=3.6"
@@ -11,7 +11,7 @@ dependencies = [
     "simple-iotest==3.61.2",
     "statbtrfs==0.26",
     "tee-logger==6.37",
-    "tsvz==3.35",
+    "tsvz==3.36",
     "statblk==1.37",
 ]
 authors = [
