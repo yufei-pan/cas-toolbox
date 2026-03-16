@@ -1,13 +1,13 @@
 [project]
 name = "cas-toolbox"
-version = "2026.11.1"
+version = "2026.12.1"
 description = "Cluster Automation Scripts Toolbox"
 readme = "README.md"
 requires-python = ">=3.6"
 dependencies = [
     "hpcp==9.50",
     "multicmd==1.46",
-    "multissh3==6.15",
+    "multissh3==6.16",
     "simple-iotest==3.61.2",
     "statbtrfs==0.26",
     "tee-logger==6.37",
