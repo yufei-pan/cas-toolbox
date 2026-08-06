@@ -19,7 +19,7 @@ wheels = [
 
 [[package]]
 name = "cas-toolbox"
-version = "2026.28.1"
+version = "2026.32.1"
 source = { virtual = "." }
 dependencies = [
     { name = "hpcp" },
@@ -34,7 +34,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "hpcp", specifier = "==9.56" },
+    { name = "hpcp", specifier = "==9.58" },
     { name = "multicmd", specifier = "==1.48" },
     { name = "multissh3", specifier = "==6.23" },
     { name = "simple-iotest", specifier = "==3.66.0" },
@@ -46,7 +46,7 @@ requires-dist = [
 
 [[package]]
 name = "hpcp"
-version = "9.56"
+version = "9.58"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "argparse" },
@@ -54,9 +54,9 @@ dependencies = [
     { name = "xxhash", version = "3.2.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.7'" },
     { name = "xxhash", version = "3.5.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.7'" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/fa/ad/f4c3b5532c6bb939215a805816aa46ac1c1dabb4b171e4669e38d0bfb780/hpcp-9.56.tar.gz", hash = "sha256:a4309d91ee200c418f698ccce73d62dad958bb21a220fe123c8d5e9669a9ade8", size = 53909, upload-time = "2026-07-10T22:36:03.298Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/5e/e2/878e484863aef02863b5f22a1b71790f83e6687c3147d7c90e4c96fd404b/hpcp-9.58.tar.gz", hash = "sha256:84a6c066fe81e8ff3aea07927152308c4642273e85da3af1f2a5bcc8e90db546", size = 56809, upload-time = "2026-08-06T01:34:05.065Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/1a/f6/cf53fa2936639841ee6a1ef6482c45b661276aaea745725f4f011121dcba/hpcp-9.56-py3-none-any.whl", hash = "sha256:e7eaba4145e30333befb886c249e24aff51fa7f4bcb78ff1a788b8b5f84d1eb9", size = 53730, upload-time = "2026-07-10T22:36:02.167Z" },
+    { url = "https://files.pythonhosted.org/packages/36/b1/58e55973d92725a969cff2bdc94436b7820c77c07b574cf629cc88730155/hpcp-9.58-py3-none-any.whl", hash = "sha256:dddfb919eba6ecbf51d8a8a37190df3b52e8935623e3797f6396bc96ca796096", size = 55055, upload-time = "2026-08-06T01:34:03.64Z" },
 ]
 
 [[package]]
