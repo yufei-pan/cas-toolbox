@@ -31,6 +31,7 @@ Cluster Automation Scripts Toolbox -
 - Tee_Logger.py
 - TSVZ.py
 - statblk.py
+- firewatcher.py
 
 ## Installation
 Use pip:
@@ -60,6 +61,7 @@ uv add cas-toolbox
 - `statbtrfs`  
 - `TSVZ` / `tsvz`
 - `statblk`
+- `firewatcher`
 
 All with `--help` / `-h` provided.
 
@@ -78,3 +80,4 @@ GPL-3.0-or-later
 - [Tee_Logger](https://github.com/yufei-pan/Tee_Logger)
 - [TSVZ](https://github.com/yufei-pan/TSVZ)
 - [statblk](https://github.com/yufei-pan/statblk)
+- [firewatcher](https://github.com/yufei-pan/firewatcher)

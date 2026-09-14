@@ -1,18 +1,19 @@
 [project]
 name = "cas-toolbox"
-version = "2026.32.1"
+version = "2026.38.1"
 description = "Cluster Automation Scripts Toolbox"
 readme = "README.md"
 requires-python = ">=3.6"
 dependencies = [
-    "hpcp==9.58",
-    "multicmd==1.48",
-    "multissh3==6.23",
-    "simple-iotest==3.66.0",
+    "hpcp==9.61",
+    "multicmd==1.49",
+    "multissh3==6.24",
+    "simple-iotest==3.67.0",
     "statbtrfs==0.30",
     "tee-logger==6.40",
     "tsvz==3.39",
-    "statblk==1.41",
+    "statblk==1.42",
+    "firewatcher==1.57",
 ]
 authors = [
     { name = "Yufei Pan", email = "pan@zopyr.us" }
@@ -39,6 +40,7 @@ statbtrfs = "statbtrfs:main"
 TSVZ = "TSVZ:__main__"
 tsvz = "TSVZ:__main__"
 statblk = "statblk:main"
+firewatcher = "firewatcher:main"
 
 
 [project.urls]
@@ -51,3 +53,4 @@ statblk = "statblk:main"
 "Tee_Logger" = "https://github.com/yufei-pan/Tee_Logger"
 "TSVZ" = "https://github.com/yufei-pan/TSVZ"
 "iotest" = "https://github.com/yufei-pan/simple-iotest"
+"firewatcher" = "https://github.com/yufei-pan/firewatcher"

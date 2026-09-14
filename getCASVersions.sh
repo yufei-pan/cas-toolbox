@@ -7,3 +7,4 @@ python3 ../statbtrfs/statbtrfs.py -V
 python3 ../tee-logger/src/Tee_Logger.py -V
 python3 ../TSVZ/TSVZ.py -V
 python3 ../statblk/statblk.py -V
+python3 ../firewatcher/firewatcher.py -V
