@@ -3,7 +3,7 @@ name = "cas-toolbox"
 version = "2026.38.1"
 description = "Cluster Automation Scripts Toolbox"
 readme = "README.md"
-requires-python = ">=3.6"
+requires-python = ">=3.8"
 dependencies = [
     "hpcp==9.61",
     "multicmd==1.49",
@@ -21,6 +21,7 @@ authors = [
 classifiers = [
     "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
     "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
     "Operating System :: POSIX :: Linux",
 ]
 license = {text = "GPL-3.0-or-later"}

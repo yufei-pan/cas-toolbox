@@ -10,7 +10,7 @@ Cluster Automation Scripts Toolbox -
 - Minimal dependencies for all scripts
 
 ## Requirements
-- Python >= 3.6  
+- Python >= 3.8  
 - argparse
 
 ## Optional Python Libs
