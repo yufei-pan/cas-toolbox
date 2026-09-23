@@ -1,19 +1,19 @@
 [project]
 name = "cas-toolbox"
-version = "2026.39.1"
+version = "2026.39.2"
 description = "Cluster Automation Scripts Toolbox"
 readme = "README.md"
-requires-python = ">=3.8"
+requires-python = ">=3.6"
 dependencies = [
-    "hpcp==9.62",
+    "hpcp==9.64",
     "multicmd==1.49",
-    "multissh3==6.24",
+    "multissh3==6.25",
     "simple-iotest==3.67.0",
     "statbtrfs==0.30",
     "tee-logger==6.40",
     "tsvz==3.39",
     "statblk==1.42",
-    "firewatcher==1.57",
+    "firewatcher==1.58",
 ]
 authors = [
     { name = "Yufei Pan", email = "pan@zopyr.us" }
@@ -21,7 +21,7 @@ authors = [
 classifiers = [
     "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
     "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.6",
     "Operating System :: POSIX :: Linux",
 ]
 license = {text = "GPL-3.0-or-later"}

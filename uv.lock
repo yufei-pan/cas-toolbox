@@ -1,10 +1,8 @@
 version = 1
 revision = 3
-requires-python = ">=3.8"
+requires-python = ">=3.6"
 resolution-markers = [
-    "python_full_version >= '3.9'",
-    "python_full_version == '3.8.*'",
-    "python_full_version == '3.7.*'",
+    "python_full_version >= '3.7'",
     "python_full_version < '3.7'",
 ]
 
@@ -19,7 +17,7 @@ wheels = [
 
 [[package]]
 name = "cas-toolbox"
-version = "2026.38.1"
+version = "2026.39.2"
 source = { virtual = "." }
 dependencies = [
     { name = "firewatcher" },
@@ -35,10 +33,10 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "firewatcher", specifier = "==1.57" },
-    { name = "hpcp", specifier = "==9.61" },
+    { name = "firewatcher", specifier = "==1.58" },
+    { name = "hpcp", specifier = "==9.64" },
     { name = "multicmd", specifier = "==1.49" },
-    { name = "multissh3", specifier = "==6.24" },
+    { name = "multissh3", specifier = "==6.25" },
     { name = "simple-iotest", specifier = "==3.67.0" },
     { name = "statblk", specifier = "==1.42" },
     { name = "statbtrfs", specifier = "==0.30" },
@@ -48,16 +46,16 @@ requires-dist = [
 
 [[package]]
 name = "firewatcher"
-version = "1.57"
+version = "1.58"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/59/d9/cbf3ffee555342859c4fe61890e432b2d87974357476682cd6a15d5c2db1/firewatcher-1.57.tar.gz", hash = "sha256:eeaf29d271086e00e7e37ada7c1c54120f9dc679e0f064d0bee0f391b1aa2555", size = 16608, upload-time = "2026-09-10T06:34:46.289Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/c7/9c/d81daa4ecbbeaa6e3523ddb195224841ad9d4cb15b64d325a81a11e649fb/firewatcher-1.58.tar.gz", hash = "sha256:8881538a4054ae324d77526b285f640a0aa12b01c8a4e3cfa3dccb2080fa562b", size = 37010, upload-time = "2026-09-23T17:34:25.331Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/3a/b3/27e3c2e413475bf0fa684c0b275a78386e77695b6c7313ddac5719c9ccc5/firewatcher-1.57-py3-none-any.whl", hash = "sha256:244b945b8020186a654397b8120da8f2ba842b1d51e901b6d8348d2f0cff92d9", size = 10802, upload-time = "2026-09-10T06:34:45.464Z" },
+    { url = "https://files.pythonhosted.org/packages/71/9d/3ef61b8df0fd12d02a0818fca254a5f8e1383f6a45d973ebf1ca04157743/firewatcher-1.58-py3-none-any.whl", hash = "sha256:37e55787f04db2865dbe1af9348d4371b3147aed0a43821e1a2bcc93a4262ae7", size = 20096, upload-time = "2026-09-23T17:34:24.207Z" },
 ]
 
 [[package]]
 name = "hpcp"
-version = "9.61"
+version = "9.64"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "argparse" },
@@ -65,9 +63,9 @@ dependencies = [
     { name = "xxhash", version = "3.2.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.7'" },
     { name = "xxhash", version = "3.5.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.7'" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/07/cb/73a075e8200217c80ac0203f595b01a9a19728b58cc4f18d20ca7b8743a0/hpcp-9.61.tar.gz", hash = "sha256:68d1608931da6cf4d4812e6e2696601a5594dad99a117b78204522e04dc47684", size = 92300, upload-time = "2026-09-14T18:21:53.569Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/e0/65/58e7ad5762e637dffc8d7cc80539a39bbd71e07eaf189b30ed6aac1e221e/hpcp-9.64.tar.gz", hash = "sha256:fe09355d8d0464dceb2f6c85be28ea836249b7e70dba418643738f9af7e1467b", size = 97113, upload-time = "2026-09-22T23:37:24.473Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/c7/7f/c191323c23ba95d1569f56548a899f5d56a681a535fcdafef84b024bc9a7/hpcp-9.61-py3-none-any.whl", hash = "sha256:1ef06bac43c2813e6aa3ede5806260774631f25524c0271171ac3dfa89262b4a", size = 67220, upload-time = "2026-09-14T18:21:52.125Z" },
+    { url = "https://files.pythonhosted.org/packages/ca/7e/45be2aa26b27b7e35fe7b6389ce1c6fb93bd7dd625f6a4aa1687d7281bc5/hpcp-9.64-py3-none-any.whl", hash = "sha256:100a0db4eb20ed44f421ad4428a11bd18ad9417c251b29de9d47f800ba5db57e", size = 68167, upload-time = "2026-09-22T23:37:23.147Z" },
 ]
 
 [[package]]
@@ -93,15 +91,15 @@ wheels = [
 
 [[package]]
 name = "multissh3"
-version = "6.24"
+version = "6.25"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "argparse" },
     { name = "ipaddress" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/ac/ea/ff9064d4803792c0c87554d55b0a62430d70d29f237ad9460184354707e5/multissh3-6.24.tar.gz", hash = "sha256:2d331854b9ccdcca55118b2180b7aec4172574e08c061ace896ce2c9e08b14b9", size = 111177, upload-time = "2026-08-20T05:31:36.758Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/cd/34/294c0d795c9ab9aafa25645991c2f749a04c143a6ac6f09158e5a75a1a00/multissh3-6.25.tar.gz", hash = "sha256:7507323296b93edb6fa05dbb1dbabe7b86a9ff99c1a21de4976d180dd79511e3", size = 112352, upload-time = "2026-09-22T21:57:41.722Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/b0/41/fcf28a4f5552a7dbf0ab4fa23c6a098dac21624f40cd42e278b632b4897f/multissh3-6.24-py3-none-any.whl", hash = "sha256:190228cc2288f06e8be1d51330282fffab156779203eca0e9b701dc6b643b510", size = 65198, upload-time = "2026-08-20T05:31:35.403Z" },
+    { url = "https://files.pythonhosted.org/packages/5b/19/e436487975fed103164b122d9b0bc4981c0f0c970c5e6551916e59b5a9df/multissh3-6.25-py3-none-any.whl", hash = "sha256:08711c006cac9a8afb86177090f2e1142546f3e12bf0028378607dbadf07a877", size = 65984, upload-time = "2026-09-22T21:57:40.049Z" },
 ]
 
 [[package]]
@@ -301,9 +299,7 @@ name = "xxhash"
 version = "3.5.0"
 source = { registry = "https://pypi.org/simple" }
 resolution-markers = [
-    "python_full_version >= '3.9'",
-    "python_full_version == '3.8.*'",
-    "python_full_version == '3.7.*'",
+    "python_full_version >= '3.7'",
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/00/5e/d6e5258d69df8b4ed8c83b6664f2b47d30d2dec551a29ad72a6c69eafd31/xxhash-3.5.0.tar.gz", hash = "sha256:84f2caddf951c9cbf8dc2e22a89d4ccf5d86391ac6418fe81e3c67d0cf60b45f", size = 84241, upload-time = "2024-08-17T09:20:38.972Z" }
 wheels = [
