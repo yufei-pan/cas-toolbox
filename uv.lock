@@ -17,7 +17,7 @@ wheels = [
 
 [[package]]
 name = "cas-toolbox"
-version = "2026.39.2"
+version = "2026.40.1"
 source = { virtual = "." }
 dependencies = [
     { name = "firewatcher" },
@@ -37,7 +37,7 @@ requires-dist = [
     { name = "hpcp", specifier = "==9.64" },
     { name = "multicmd", specifier = "==1.49" },
     { name = "multissh3", specifier = "==6.25" },
-    { name = "simple-iotest", specifier = "==3.67.0" },
+    { name = "simple-iotest", specifier = "==3.68.0" },
     { name = "statblk", specifier = "==1.42" },
     { name = "statbtrfs", specifier = "==0.30" },
     { name = "tee-logger", specifier = "==6.40" },
@@ -116,15 +116,15 @@ wheels = [
 
 [[package]]
 name = "simple-iotest"
-version = "3.67.0"
+version = "3.68.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "argparse" },
     { name = "tee-logger" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/75/c7/350b36edcb227849e70a8fb4e3a45328bdb44c06d575e5c317d23c05367a/simple_iotest-3.67.0.tar.gz", hash = "sha256:f560856c73d83d9de69e9c38bf653a3ae33fe0c2398912c356a3e0bc7783f59d", size = 25487, upload-time = "2026-08-13T10:32:23.231Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/16/19/80597ac93ada8b42d9624f5264c75893712dc332f109a56dfbdc9f911bc3/simple_iotest-3.68.0.tar.gz", hash = "sha256:52861130a05d9c360ead415866d5dd91cb8b4175a93fd6d40516cf72badf1d74", size = 26526, upload-time = "2026-09-28T22:21:21.728Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/87/e7/4a87d320dc37d255c9934d201faa8fbaa79171bdda1b990cb0c5613c907f/simple_iotest-3.67.0-py3-none-any.whl", hash = "sha256:3494b60234c0408faa6ae8c596b566e0cbe5be66d718d69ea218d4ccb7a57286", size = 17533, upload-time = "2026-08-13T10:32:22.239Z" },
+    { url = "https://files.pythonhosted.org/packages/6d/f0/1590d4c2435882fd41bd0a04e29b8b0de6ae6a2006b6b294a5bd02d74a1f/simple_iotest-3.68.0-py3-none-any.whl", hash = "sha256:744df41254170eb39aee702e128a37e0783b0822d94691cb9386e1e544316ba4", size = 17828, upload-time = "2026-09-28T22:21:20.836Z" },
 ]
 
 [[package]]
