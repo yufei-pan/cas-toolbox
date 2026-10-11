@@ -1,77 +1,195 @@
 # cas-toolbox
 
-**Version:** ex: `2025.7.2` -> (2025 wk 7 hotfix 2) 
+[![PyPI version](https://img.shields.io/pypi/v/cas-toolbox.svg)](https://pypi.org/project/cas-toolbox/)
+[![Python versions](https://img.shields.io/pypi/pyversions/cas-toolbox.svg)](https://pypi.org/project/cas-toolbox/)
+[![License](https://img.shields.io/pypi/l/cas-toolbox.svg)](https://www.gnu.org/licenses/gpl-3.0.html)
 
-Will update every monday if there is a code change.
+**Cluster Automation Scripts Toolbox** — one stop shop for tool scripts used in
+cluster automation operations in high performance computing.
 
-Cluster Automation Scripts Toolbox - 
-- One stop ship for tool scripts for cluster automation operations in high performance computing.
-- All single file script / libs for easy transportation
-- Minimal dependencies for all scripts
+`cas-toolbox` is a **meta-package**: it ships no code of its own. It pins exact
+releases of the nine tools below and installs all of their console commands in a
+single step, so a fresh host gets the whole toolbox with one `pip install`.
+
+Every bundled tool is a **single self-contained `.py` file** — copy one onto a
+host and it runs, no packaging required.
+
+## Project metadata
+
+| | |
+|---|---|
+| **Current version** | `2026.40.1` |
+| **Released** | 2026-09-28 |
+| **Python** | >= 3.6 |
+| **Platform** | Linux (POSIX); macOS for `multiSSH3`, `simple-iotest`, `statblk`, `tee-logger`, `TSVZ` |
+| **License** | GPL-3.0-or-later |
+| **Author** | Yufei Pan (pan@zopyr.us) |
+| **Homepage** | [github.com/yufei-pan/cas-toolbox](https://github.com/yufei-pan/cas-toolbox) |
+| **PyPI** | [pypi.org/project/cas-toolbox](https://pypi.org/project/cas-toolbox/) |
+| **Build backend** | setuptools (`pyproject.toml`) |
+| **Bundled tools** | 9 |
+
+## Versioning and release cadence
+
+Versions are `YYYY.WW.hotfix` — calendar year, ISO week number, and a hotfix
+counter. For example `2026.40.1` is the first release cut in week 40 of 2026.
+
+The bundle is deliberately **semi-stable**:
+
+- **Mondays** are the normal re-cut. Last week's accumulated upstream changes are
+  rolled into one release: the `==` pins of everything that moved are updated and
+  the version bumps to the new `YYYY.WW`.
+- **Mid-week** releases are for **emergency fixes only**. Only the affected tool's
+  pin changes and the `hotfix` segment increments (`2026.39.1` → `2026.39.2`),
+  leaving the week number alone.
+- Releasing an individual upstream tool is independent and can happen any day.
+  Its pin bump normally rides along in the next Monday roll-up.
+
+Upstream tools use their own `x.y` / `x.y.z` schemes; the pins in this package
+record exactly which release is in the bundle.
+
+## Included tools
+
+Versions listed are the ones **pinned by the current release** of `cas-toolbox`.
+
+| Tool | Module | PyPI package | Pinned | Commands | What it does |
+|---|---|---|---|---|---|
+| [hpcp](https://github.com/yufei-pan/hpcp) | `hpcp.py` | [`hpcp`](https://pypi.org/project/hpcp/) | 9.64 | `hpcp` | Highly-parallel `cp` / imaging for HPC storage |
+| [multiCMD](https://github.com/yufei-pan/multiCMD) | `multiCMD.py` | [`multicmd`](https://pypi.org/project/multiCMD/) | 1.49 | `mcmd`, `multicmd`, `multiCMD` | Run many subprocesses in parallel (base library) |
+| [multiSSH3](https://github.com/yufei-pan/multiSSH3) | `multiSSH3.py` | [`multissh3`](https://pypi.org/project/multissh3/) | 6.25 | `mssh`, `mssh3`, `multissh`, `multissh3`, `multiSSH3` | Parallel SSH across hosts, curses TUI |
+| [simple-iotest](https://github.com/yufei-pan/simple-iotest) | `iotest.py` | [`simple-iotest`](https://pypi.org/project/simple-iotest/) | 3.68.0 | `iotest` | Dead-simple filesystem I/O benchmark |
+| [statbtrfs](https://github.com/yufei-pan/statbtrfs) | `statbtrfs.py` | [`statbtrfs`](https://pypi.org/project/statbtrfs/) | 0.30 | `statbtrfs` | Btrfs status / scrub orchestration |
+| [Tee_Logger](https://github.com/yufei-pan/Tee_Logger) | `src/Tee_Logger.py` | [`tee-logger`](https://pypi.org/project/tee-logger/) | 6.40 | *(library only)* | Logger that tees to dated files + stdout |
+| [TSVZ](https://github.com/yufei-pan/TSVZ) | `TSVZ.py` | [`tsvz`](https://pypi.org/project/tsvz/) | 3.39 | `tsvz`, `TSVZ` | Key-value store / in-memory DB backed by a TSV file |
+| [statblk](https://github.com/yufei-pan/statblk) | `statblk.py` | [`statblk`](https://pypi.org/project/statblk/) | 1.42 | `statblk` | Block-device / partition info table |
+| [firewatcher](https://github.com/yufei-pan/firewatcher) | `firewatcher.py` | [`firewatcher`](https://pypi.org/project/firewatcher/) | 1.58 | `firewatcher` | Journal/log incident capture with off-box context |
+
+Internal dependency graph worth knowing when a pin moves:
+
+- `multiCMD` is the foundation — `hpcp`, `statbtrfs` and `statblk` all depend on it.
+- `simple-iotest` depends on `tee-logger`.
+
+## Recent releases
+
+| Version | Date | What changed |
+|---|---|---|
+| `2026.40.1` | 2026-09-28 | `simple-iotest` 3.67.0 → 3.68.0: IOPS (call/sync) and op counts in every mode's report, including index; fixed worker count for repeated role keys (e.g. `write s`), which over-reported size and call bandwidth. |
+| `2026.39.2` | 2026-09-23 | Mid-week hotfix. Restored `requires-python >= 3.6` (2026.39.1 had raised it to 3.8 for TSVZ 4.0 while still pinning `tsvz` 3.39, so pip on 3.6 silently stayed on 2026.38.1). `hpcp` 9.62 → 9.64, `multissh3` 6.24 → 6.25, `firewatcher` 1.57 → 1.58. |
+| `2026.39.1` | 2026-09-21 | `hpcp` 9.61 → 9.62: remove-mode file counting, progress-bar sizing, and a cache path that skipped the unlink. |
+
+Full history is in the [commit log](https://github.com/yufei-pan/cas-toolbox/commits/master).
 
 ## Requirements
-- Python >= 3.6  
-- argparse
 
-## Optional Python Libs
-- curses
-- python-dateutil
-- xxhash
-- resource
-- prettytable
-- ipaddress
-- numpy
+- Python >= 3.6
 
-## Includes following single file libs
-- hpcp.py
-- multiCMD.py 
-- multiSSH3.py
-- iotest.py (simple-iotest) 
-- statbtrfs.py
-- Tee_Logger.py
-- TSVZ.py
-- statblk.py
-- firewatcher.py
+Nothing outside the standard library is required; the optional libraries below
+only add features or speed.
+
+## Optional Python libraries
+
+Heavier libraries are imported defensively — every tool runs without them, just
+with reduced functionality or performance.
+
+| Library | Used by | Effect when present |
+|---|---|---|
+| `curses` | `multiSSH3` | Interactive TUI instead of the plain text output |
+| `numpy` | `iotest` | Much faster random-number generation in the I/O benchmark |
+| `xxhash` | `hpcp` | Faster hashing; falls back to `hashlib.blake2b` |
+| `resource` | `multiSSH3`, `TSVZ` | Resource-usage reporting |
+| `python-dateutil` | `tee-logger` | Parsing dated log directory names when cleaning up old logs |
+| `argcomplete` | `TSVZ`, `statblk`, `statbtrfs` | Shell tab completion (`pip install '<tool>[completion]'`) |
+
+`xxhash` is declared by `hpcp` but imported defensively, so `hpcp` still works
+without it.
 
 ## Installation
+
 Use pip:
+
 ```bash
 pip install cas-toolbox
 ```
+
 Use pipx:
+
 ```bash
 pipx install cas-toolbox
 ```
-Use uv:
+
+Use uv (as an isolated tool, with `numpy` for the `iotest` benchmark):
+
 ```bash
 uv tool install --with numpy cas-toolbox
 ```
-Note: with numpy, iotest random number generator will perform much better. But it is not used anywhere else.
 
-Use uv to add as dependency:
+Use uv to add it as a dependency:
+
 ```bash
 uv add cas-toolbox
 ```
 
-## Commands provided:
-- `hpcp`  
-- `mcmd` / `multicmd` / `multiCMD`  
-- `mssh` / `mssh3` / `multissh` / `multissh3` / `multiSSH3`  
-- `iotest`  
-- `statbtrfs`  
-- `TSVZ` / `tsvz`
-- `statblk`
-- `firewatcher`
+> **Note on `numpy`:** it is only used by `iotest`'s random-number generator and
+> is not needed anywhere else in the toolbox.
 
-All with `--help` / `-h` provided.
+To install one tool on its own, install its PyPI package directly instead of this
+meta-package.
+
+## Commands provided
+
+| Command | Tool |
+|---|---|
+| `hpcp` | hpcp |
+| `mcmd` / `multicmd` / `multiCMD` | multiCMD |
+| `mssh` / `mssh3` / `multissh` / `multissh3` / `multiSSH3` | multiSSH3 |
+| `iotest` | simple-iotest |
+| `statbtrfs` | statbtrfs |
+| `tsvz` / `TSVZ` | TSVZ |
+| `statblk` | statblk |
+| `firewatcher` | firewatcher |
+
+Every command supports `--help` / `-h` and `-V` / `--version`.
+
+## Verifying an install
+
+```bash
+hpcp -V && mcmd -V && mssh3 -V && iotest -V && statbtrfs -V \
+  && TSVZ -V && statblk -V && firewatcher -V
+```
+
+`cas-toolbox` itself exposes no command — it is a dependency bundle only.
+
+From a checkout that has the nine upstream repositories side by side,
+`getCASVersions.sh` prints every tool's version at once:
+
+```bash
+./getCASVersions.sh
+```
+
+## Development
+
+This repository holds only the meta-package (`pyproject.toml`, `uv.lock`,
+`README.md`, `getCASVersions.sh`). The upstream sources live in their own
+repositories — see the links below.
+
+```bash
+uv sync --frozen     # resolve the locked dependency set
+uv build             # build wheel + sdist into dist/
+```
+
+Pins are exact (`==`) on purpose: the bundle is meant to be reproducible.
 
 ## Author
+
 - Yufei Pan (pan@zopyr.us)
 
 ## License
+
 GPL-3.0-or-later
 
 ## Links
+
+- Project home: [github.com/yufei-pan/cas-toolbox](https://github.com/yufei-pan/cas-toolbox)
 - [hpcp](https://github.com/yufei-pan/hpcp)
 - [multiCMD](https://github.com/yufei-pan/multiCMD)
 - [multiSSH3](https://github.com/yufei-pan/multiSSH3)
