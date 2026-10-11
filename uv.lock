@@ -37,7 +37,7 @@ requires-dist = [
     { name = "hpcp", specifier = "==9.66" },
     { name = "multicmd", specifier = "==1.52" },
     { name = "multissh3", specifier = "==6.27" },
-    { name = "simple-iotest", specifier = "==3.68.0" },
+    { name = "simple-iotest", specifier = "==3.69.1" },
     { name = "statblk", specifier = "==1.53" },
     { name = "statbtrfs", specifier = "==0.34" },
     { name = "tee-logger", specifier = "==6.42" },
@@ -87,15 +87,14 @@ wheels = [
 
 [[package]]
 name = "simple-iotest"
-version = "3.68.0"
+version = "3.69.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "argparse" },
     { name = "tee-logger" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/16/19/80597ac93ada8b42d9624f5264c75893712dc332f109a56dfbdc9f911bc3/simple_iotest-3.68.0.tar.gz", hash = "sha256:52861130a05d9c360ead415866d5dd91cb8b4175a93fd6d40516cf72badf1d74", size = 26526, upload-time = "2026-09-28T22:21:21.728Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/e1/00/747b77b11997b7abb6fb4442bb2419ae760f6d16ad0c24315bcef0abb917/simple_iotest-3.69.1.tar.gz", hash = "sha256:0b8ae6786ddadb1cf9eb06e1337b67cfebabe1eeedb7114a55b7f366a275355a", size = 47151, upload-time = "2026-10-11T08:03:19.625Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/6d/f0/1590d4c2435882fd41bd0a04e29b8b0de6ae6a2006b6b294a5bd02d74a1f/simple_iotest-3.68.0-py3-none-any.whl", hash = "sha256:744df41254170eb39aee702e128a37e0783b0822d94691cb9386e1e544316ba4", size = 17828, upload-time = "2026-09-28T22:21:20.836Z" },
+    { url = "https://files.pythonhosted.org/packages/a3/fa/16e338e7bffdc5cc2cb620c0990a700d98c4bb098126662013befe4e0a88/simple_iotest-3.69.1-py3-none-any.whl", hash = "sha256:a2895e6ba23b823a739a7ec495ff635f0a6ddbf69b1a0568877002a10b277108", size = 26269, upload-time = "2026-10-11T08:03:18.612Z" },
 ]
 
 [[package]]
