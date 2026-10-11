@@ -18,8 +18,8 @@ host and it runs, no packaging required.
 
 | | |
 |---|---|
-| **Current version** | `2026.40.1` |
-| **Released** | 2026-09-28 |
+| **Current version** | `2026.42.1` |
+| **Released** | 2026-10-12 |
 | **Python** | >= 3.6 |
 | **Platform** | Linux (POSIX); macOS for `multiSSH3`, `simple-iotest`, `statblk`, `tee-logger`, `TSVZ` |
 | **License** | GPL-3.0-or-later |
@@ -54,15 +54,15 @@ Versions listed are the ones **pinned by the current release** of `cas-toolbox`.
 
 | Tool | Module | PyPI package | Pinned | Commands | What it does |
 |---|---|---|---|---|---|
-| [hpcp](https://github.com/yufei-pan/hpcp) | `hpcp.py` | [`hpcp`](https://pypi.org/project/hpcp/) | 9.64 | `hpcp` | Highly-parallel `cp` / imaging for HPC storage |
-| [multiCMD](https://github.com/yufei-pan/multiCMD) | `multiCMD.py` | [`multicmd`](https://pypi.org/project/multiCMD/) | 1.49 | `mcmd`, `multicmd`, `multiCMD` | Run many subprocesses in parallel (base library) |
-| [multiSSH3](https://github.com/yufei-pan/multiSSH3) | `multiSSH3.py` | [`multissh3`](https://pypi.org/project/multissh3/) | 6.25 | `mssh`, `mssh3`, `multissh`, `multissh3`, `multiSSH3` | Parallel SSH across hosts, curses TUI |
+| [hpcp](https://github.com/yufei-pan/hpcp) | `hpcp.py` | [`hpcp`](https://pypi.org/project/hpcp/) | 9.66 | `hpcp` | Highly-parallel `cp` / imaging for HPC storage |
+| [multiCMD](https://github.com/yufei-pan/multiCMD) | `multiCMD.py` | [`multicmd`](https://pypi.org/project/multiCMD/) | 1.52 | `mcmd`, `multicmd`, `multiCMD` | Run many subprocesses in parallel (base library) |
+| [multiSSH3](https://github.com/yufei-pan/multiSSH3) | `multiSSH3.py` | [`multissh3`](https://pypi.org/project/multissh3/) | 6.27 | `mssh`, `mssh3`, `multissh`, `multissh3`, `multiSSH3` | Parallel SSH across hosts, curses TUI |
 | [simple-iotest](https://github.com/yufei-pan/simple-iotest) | `iotest.py` | [`simple-iotest`](https://pypi.org/project/simple-iotest/) | 3.68.0 | `iotest` | Dead-simple filesystem I/O benchmark |
-| [statbtrfs](https://github.com/yufei-pan/statbtrfs) | `statbtrfs.py` | [`statbtrfs`](https://pypi.org/project/statbtrfs/) | 0.30 | `statbtrfs` | Btrfs status / scrub orchestration |
-| [Tee_Logger](https://github.com/yufei-pan/Tee_Logger) | `src/Tee_Logger.py` | [`tee-logger`](https://pypi.org/project/tee-logger/) | 6.40 | *(library only)* | Logger that tees to dated files + stdout |
-| [TSVZ](https://github.com/yufei-pan/TSVZ) | `TSVZ.py` | [`tsvz`](https://pypi.org/project/tsvz/) | 3.39 | `tsvz`, `TSVZ` | Key-value store / in-memory DB backed by a TSV file |
-| [statblk](https://github.com/yufei-pan/statblk) | `statblk.py` | [`statblk`](https://pypi.org/project/statblk/) | 1.42 | `statblk` | Block-device / partition info table |
-| [firewatcher](https://github.com/yufei-pan/firewatcher) | `firewatcher.py` | [`firewatcher`](https://pypi.org/project/firewatcher/) | 1.58 | `firewatcher` | Journal/log incident capture with off-box context |
+| [statbtrfs](https://github.com/yufei-pan/statbtrfs) | `statbtrfs.py` | [`statbtrfs`](https://pypi.org/project/statbtrfs/) | 0.34 | `statbtrfs` | Btrfs status / scrub orchestration |
+| [Tee_Logger](https://github.com/yufei-pan/Tee_Logger) | `src/Tee_Logger.py` | [`tee-logger`](https://pypi.org/project/tee-logger/) | 6.42 | *(library only)* | Logger that tees to dated files + stdout |
+| [TSVZ](https://github.com/yufei-pan/TSVZ) | `TSVZ.py` | [`tsvz`](https://pypi.org/project/tsvz/) | 4.2 | `tsvz`, `TSVZ` | Key-value store / in-memory DB backed by a TSV file |
+| [statblk](https://github.com/yufei-pan/statblk) | `statblk.py` | [`statblk`](https://pypi.org/project/statblk/) | 1.53 | `statblk` | Block-device / partition info table |
+| [firewatcher](https://github.com/yufei-pan/firewatcher) | `firewatcher.py` | [`firewatcher`](https://pypi.org/project/firewatcher/) | 1.59 | `firewatcher` | Journal/log incident capture with off-box context |
 
 Internal dependency graph worth knowing when a pin moves:
 
@@ -73,9 +73,9 @@ Internal dependency graph worth knowing when a pin moves:
 
 | Version | Date | What changed |
 |---|---|---|
+| `2026.42.1` | 2026-10-12 | **`tsvz` 3.39 → 4.2 (major):** `.tsvz` / `.csvz` / `.nsvz` / `.psvz` files now follow tsvz-spec-v1, so a file 3.39 wrote under one of those names reads differently — rename it to `.tsv` (see TSVZ's *Breaking changes from 3.39*); `.tsv` / `.csv` get bug fixes only. `multissh3` 6.25 → 6.27: config and env files are only trusted when only you (or root) can change them and are no longer read from the current directory, stdin is closed when no TUI runs, faster output reading and host lookups, `~/.ssh/config` aliases and IPv6-only hosts, one Ctrl-C cancels the run. `multicmd` 1.49 → 1.52: real exit status, no default timeout, commands from files or stdin. `statblk` 1.42 → 1.53: `--check` health mode with exit codes, spun-down drives are not woken for SMART. `statbtrfs` 0.30 → 0.34: `-w/--watch`, btrfs-progs 6.x missing devices. `tee-logger` 6.40 → 6.42: hang, crash-data-loss and log-cleanup fixes. `hpcp` 9.64 → 9.66 (embeds multiCMD 1.52), `firewatcher` 1.58 → 1.59 (less CPU and memory per line). |
 | `2026.40.1` | 2026-09-28 | `simple-iotest` 3.67.0 → 3.68.0: IOPS (call/sync) and op counts in every mode's report, including index; fixed worker count for repeated role keys (e.g. `write s`), which over-reported size and call bandwidth. |
 | `2026.39.2` | 2026-09-23 | Mid-week hotfix. Restored `requires-python >= 3.6` (2026.39.1 had raised it to 3.8 for TSVZ 4.0 while still pinning `tsvz` 3.39, so pip on 3.6 silently stayed on 2026.38.1). `hpcp` 9.62 → 9.64, `multissh3` 6.24 → 6.25, `firewatcher` 1.57 → 1.58. |
-| `2026.39.1` | 2026-09-21 | `hpcp` 9.61 → 9.62: remove-mode file counting, progress-bar sizing, and a cache path that skipped the unlink. |
 
 Full history is in the [commit log](https://github.com/yufei-pan/cas-toolbox/commits/master).
 
