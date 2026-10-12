@@ -32,7 +32,7 @@ requires-dist = [
     { name = "statblk", specifier = "==1.54" },
     { name = "statbtrfs", specifier = "==0.35" },
     { name = "tee-logger", specifier = "==6.42" },
-    { name = "tsvz", specifier = "==4.3" },
+    { name = "tsvz", specifier = "==4.4" },
 ]
 
 [[package]]
@@ -123,11 +123,11 @@ wheels = [
 
 [[package]]
 name = "tsvz"
-version = "4.3"
+version = "4.4"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/32/e1/2c5a8047b8d624b51d1e45195428393d894f065a24c8a11b63dc06bf71dd/tsvz-4.3.tar.gz", hash = "sha256:fe9312e2be88635c2dcc3f4900b072cb911e70b3712be156b58364c8fb9d9757", size = 79047, upload-time = "2026-10-12T02:37:00.972Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/27/af/baaf00ba2f10c44a7063238df59d41d7fc68f256a24db41ac6570849516c/tsvz-4.4.tar.gz", hash = "sha256:e3eff996553fdc4c81ce862c02ea387a3d9ce6965b0e5077d19a147c7505f111", size = 86848, upload-time = "2026-10-12T08:42:01.481Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/30/89/f1c51b346e28f7df3a58aa0f78a3604fa53bd6d3bbefe9b452e204b1e9ae/tsvz-4.3-py3-none-any.whl", hash = "sha256:4989a233c9e1f8778986274c874a06f740066044d4fafdb93afc94aa3064a278", size = 78143, upload-time = "2026-10-12T02:36:59.659Z" },
+    { url = "https://files.pythonhosted.org/packages/ce/0f/1c2c0580ae3b0bd10976b7788cb751a434cda3f166d1ba542fd350c5e945/tsvz-4.4-py3-none-any.whl", hash = "sha256:186920311ee2aadadeb33285d2b5d91d593139da1006361bc8ad5cb331c89577", size = 85782, upload-time = "2026-10-12T08:41:59.894Z" },
 ]
 
 [[package]]
