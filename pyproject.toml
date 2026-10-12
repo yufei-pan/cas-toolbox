@@ -6,13 +6,13 @@ readme = "README.md"
 requires-python = ">=3.6"
 dependencies = [
     "hpcp==9.66",
-    "multicmd==1.52",
+    "multicmd==1.53",
     "multissh3==6.27",
     "simple-iotest==3.69.1",
-    "statbtrfs==0.34",
+    "statbtrfs==0.35",
     "tee-logger==6.42",
     "tsvz==4.3",
-    "statblk==1.53",
+    "statblk==1.54",
     "firewatcher==1.59",
 ]
 authors = [

@@ -26,11 +26,11 @@ dependencies = [
 requires-dist = [
     { name = "firewatcher", specifier = "==1.59" },
     { name = "hpcp", specifier = "==9.66" },
-    { name = "multicmd", specifier = "==1.52" },
+    { name = "multicmd", specifier = "==1.53" },
     { name = "multissh3", specifier = "==6.27" },
     { name = "simple-iotest", specifier = "==3.69.1" },
-    { name = "statblk", specifier = "==1.53" },
-    { name = "statbtrfs", specifier = "==0.34" },
+    { name = "statblk", specifier = "==1.54" },
+    { name = "statbtrfs", specifier = "==0.35" },
     { name = "tee-logger", specifier = "==6.42" },
     { name = "tsvz", specifier = "==4.3" },
 ]
@@ -60,11 +60,11 @@ wheels = [
 
 [[package]]
 name = "multicmd"
-version = "1.52"
+version = "1.53"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/31/e2/f0f2bfbe477d19aa96bc46e994c4694b6e3a050d1c6ab114642da44f3cd6/multicmd-1.52.tar.gz", hash = "sha256:9fea4c49b59079e20da04630206b2ff77619c1c41a90aaa5138f3a0eb10e0906", size = 53189, upload-time = "2026-10-11T05:02:36.177Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/38/01/ac8acba9861ce6a54ea3ab07aef31c3adb975e873c685008b60faa676633/multicmd-1.53.tar.gz", hash = "sha256:89dfeac3c4444b1b0e9b4c7637a403ea44da220818b8d6d0c235e78187dd3892", size = 53954, upload-time = "2026-10-12T03:22:01.338Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/65/b5/970de12f867f8df0327b4efa3011f9c989f91899a0dace022435e8b5ad33/multicmd-1.52-py3-none-any.whl", hash = "sha256:54855f45537678340ce312b3ad9d5f394ad1fa25c70771559b076fbc9594aaa1", size = 33318, upload-time = "2026-10-11T05:02:35.056Z" },
+    { url = "https://files.pythonhosted.org/packages/e4/f5/aeb151f8703267d544f3145d2a8891f45244d2aa414a1d5dd9fe509cc025/multicmd-1.53-py3-none-any.whl", hash = "sha256:ccc89dcdbcb8a4b8384a12809428a1e0402c5a1c176506c5756ff355f78f7f26", size = 33514, upload-time = "2026-10-12T03:22:00.112Z" },
 ]
 
 [[package]]
@@ -90,26 +90,26 @@ wheels = [
 
 [[package]]
 name = "statblk"
-version = "1.53"
+version = "1.54"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "multicmd" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/36/c4/3c5600a4fc507a461e09df5f819ac9ca817ae4642057117afb8ed2763e5f/statblk-1.53.tar.gz", hash = "sha256:853d5f7c9006f6d306ad4b74accfff416e0e50b622ccb6febf7cb0e428d3985c", size = 51485, upload-time = "2026-10-11T04:22:25.609Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/3a/d1/c85e91596e8010f6bafe206c5a22d66d4b081873fd61874f32a7fe30055d/statblk-1.54.tar.gz", hash = "sha256:d60a4d742f54ccc45081e961f8378ce4a482d727c534d472633d169adb588a67", size = 52137, upload-time = "2026-10-12T03:22:06.79Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/24/bc/7b8c8652a10d52f68152cda0be6f9ab421e04d5addcd0858605184b16c38/statblk-1.53-py3-none-any.whl", hash = "sha256:6308fe5af06c83cf8b0065be2edac895538f12e8e23366e63cb7ab490aad56bd", size = 35905, upload-time = "2026-10-11T04:22:24.54Z" },
+    { url = "https://files.pythonhosted.org/packages/89/99/3e421a1347969e6ad06b3089256ca1a2d287b89cc7ca7cb02428dc6fb408/statblk-1.54-py3-none-any.whl", hash = "sha256:f54cc6549608b0928b41c6331c2d7d7aa6682965e6d65a3c222a4995b916447c", size = 36006, upload-time = "2026-10-12T03:22:05.443Z" },
 ]
 
 [[package]]
 name = "statbtrfs"
-version = "0.34"
+version = "0.35"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "multicmd" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/94/52/61815182fb5f95ee6ea6450be2cef5bbfd2d3a2d64a321b147ba55bdd9d0/statbtrfs-0.34.tar.gz", hash = "sha256:14dbeef08c9567e4a4b25ce7352cf4e11377838f8cc1d4a56c2f1da3e4f6fba8", size = 35426, upload-time = "2026-10-11T05:20:05.152Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/44/7f/3935694faea92cb9086a428465c064b7a96c30157b16fce6e7ee7d1bf7f3/statbtrfs-0.35.tar.gz", hash = "sha256:f85da510b87dc1f82ec58c6852933ad4bd8778225d5b8bc025efb78a0c67999f", size = 36425, upload-time = "2026-10-12T03:22:09.799Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/a1/d9/acaff95d1ef7d33b00291afe4d1447818aaf8e4f88dd610322d82eb85b3b/statbtrfs-0.34-py3-none-any.whl", hash = "sha256:88513eac60052f4d34ec315b5332818241c3839c0e8082001ca34fcab5918716", size = 24378, upload-time = "2026-10-11T05:20:03.983Z" },
+    { url = "https://files.pythonhosted.org/packages/d5/c0/749c8c63cdc1991ed5673a3a60876451b894f3faa7bc7c71943db85ce798/statbtrfs-0.35-py3-none-any.whl", hash = "sha256:21c50b73cff0933c898091fab8405d61d9393e175c32a343abda4c1ddf7e9f02", size = 24491, upload-time = "2026-10-12T03:22:08.624Z" },
 ]
 
 [[package]]
