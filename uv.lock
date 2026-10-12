@@ -7,15 +7,6 @@ resolution-markers = [
 ]
 
 [[package]]
-name = "argparse"
-version = "1.4.0"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/18/dd/e617cfc3f6210ae183374cd9f6a26b20514bbb5a792af97949c5aacddf0f/argparse-1.4.0.tar.gz", hash = "sha256:62b089a55be1d8949cd2bc7e0df0bddb9e028faefc8c32038cc84862aefdd6e4", size = 70508, upload-time = "2015-09-12T20:22:16.217Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/f2/94/3af39d34be01a24a6e65433d19e107099374224905f1e0cc6bbe1fd22a2f/argparse-1.4.0-py2.py3-none-any.whl", hash = "sha256:c31647edb69fd3d465a847ea3157d37bed1f95f19760b11a47aa91c04b666314", size = 23000, upload-time = "2015-09-14T16:03:16.137Z" },
-]
-
-[[package]]
 name = "cas-toolbox"
 version = "2026.42.1"
 source = { virtual = "." }
@@ -41,7 +32,7 @@ requires-dist = [
     { name = "statblk", specifier = "==1.53" },
     { name = "statbtrfs", specifier = "==0.34" },
     { name = "tee-logger", specifier = "==6.42" },
-    { name = "tsvz", specifier = "==4.2" },
+    { name = "tsvz", specifier = "==4.3" },
 ]
 
 [[package]]
@@ -132,14 +123,11 @@ wheels = [
 
 [[package]]
 name = "tsvz"
-version = "4.2"
+version = "4.3"
 source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "argparse" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/a3/be/edbe4d717b677f17c53cee22f8375dffdd88ad70915cde279a5f292619e5/tsvz-4.2.tar.gz", hash = "sha256:3c7b1dda72685928e2c20415f06b124f06e8bf16a1862e3d02094d05d6a3149b", size = 76699, upload-time = "2026-10-10T21:38:55.774Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/32/e1/2c5a8047b8d624b51d1e45195428393d894f065a24c8a11b63dc06bf71dd/tsvz-4.3.tar.gz", hash = "sha256:fe9312e2be88635c2dcc3f4900b072cb911e70b3712be156b58364c8fb9d9757", size = 79047, upload-time = "2026-10-12T02:37:00.972Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/66/0d/805272ce80956aa5c52a15274d343084cfdb8aaeee925e673b615466ecfe/tsvz-4.2-py3-none-any.whl", hash = "sha256:2c43d85a6d68fecaf97137f3e96868356c3fdbf32cbc5539a8386ef66321d1dd", size = 76235, upload-time = "2026-10-10T21:38:54.407Z" },
+    { url = "https://files.pythonhosted.org/packages/30/89/f1c51b346e28f7df3a58aa0f78a3604fa53bd6d3bbefe9b452e204b1e9ae/tsvz-4.3-py3-none-any.whl", hash = "sha256:4989a233c9e1f8778986274c874a06f740066044d4fafdb93afc94aa3064a278", size = 78143, upload-time = "2026-10-12T02:36:59.659Z" },
 ]
 
 [[package]]

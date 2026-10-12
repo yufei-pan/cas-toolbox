@@ -11,7 +11,7 @@ dependencies = [
     "simple-iotest==3.69.1",
     "statbtrfs==0.34",
     "tee-logger==6.42",
-    "tsvz==4.2",
+    "tsvz==4.3",
     "statblk==1.53",
     "firewatcher==1.59",
 ]
