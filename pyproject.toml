@@ -7,7 +7,7 @@ requires-python = ">=3.6"
 dependencies = [
     "hpcp==9.72",
     "multicmd==1.53",
-    "multissh3==6.27",
+    "multissh3==6.31",
     "simple-iotest==3.69.1",
     "statbtrfs==0.35",
     "tee-logger==6.42",
@@ -36,6 +36,7 @@ mssh3 = "multiSSH3:main"
 multissh = "multiSSH3:main"
 multissh3 = "multiSSH3:main"
 multiSSH3 = "multiSSH3:main"
+mssh-complete = "mssh_complete:main"
 iotest = "iotest:climain"
 statbtrfs = "statbtrfs:main"
 TSVZ = "TSVZ:__main__"

@@ -27,7 +27,7 @@ requires-dist = [
     { name = "firewatcher", specifier = "==1.59" },
     { name = "hpcp", specifier = "==9.72" },
     { name = "multicmd", specifier = "==1.53" },
-    { name = "multissh3", specifier = "==6.27" },
+    { name = "multissh3", specifier = "==6.31" },
     { name = "simple-iotest", specifier = "==3.69.1" },
     { name = "statblk", specifier = "==1.54" },
     { name = "statbtrfs", specifier = "==0.35" },
@@ -69,11 +69,11 @@ wheels = [
 
 [[package]]
 name = "multissh3"
-version = "6.27"
+version = "6.31"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/99/25/daff8c7b6f7964ae1e112f75fe92b82bbaaf0228fabf5c7e98ca7cba91a8/multissh3-6.27.tar.gz", hash = "sha256:725ff003c141c5bdd131f5f34211df7c50899b1053057117dd22932ae7999a5c", size = 144311, upload-time = "2026-10-11T04:51:33.034Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/a0/79/723652c82c2af0f56bb20faf42b944cda58d8192ff7693869c43957d9c44/multissh3-6.31.tar.gz", hash = "sha256:f25197b4e87b5246dece2712fb35bd56db25413d5658b6008b6f3eedca64258a", size = 268273, upload-time = "2026-10-13T07:46:13.103Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/14/0e/0d2b330c4c58dad73fb76a1be48b54504ac6192254356810e85e6e40d5e1/multissh3-6.27-py3-none-any.whl", hash = "sha256:77fc5ef68bbbf69da04ffdda5dd6cab240838e729019cb261fec9067896acd95", size = 77045, upload-time = "2026-10-11T04:51:31.616Z" },
+    { url = "https://files.pythonhosted.org/packages/33/2a/6ac1cd2dc1952e2e5e90280548bad1371715aebb4cdc1c0c4b6eb25ab867/multissh3-6.31-py3-none-any.whl", hash = "sha256:36c7643c92aaf99d947c06aa238dbfc1c82598ab2e902cd56b02294cf9e18efd", size = 150851, upload-time = "2026-10-13T07:46:11.788Z" },
 ]
 
 [[package]]
