@@ -5,7 +5,7 @@ description = "Cluster Automation Scripts Toolbox"
 readme = "README.md"
 requires-python = ">=3.6"
 dependencies = [
-    "hpcp==9.66",
+    "hpcp==9.72",
     "multicmd==1.53",
     "multissh3==6.27",
     "simple-iotest==3.69.1",

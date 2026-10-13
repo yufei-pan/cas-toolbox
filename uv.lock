@@ -25,7 +25,7 @@ dependencies = [
 [package.metadata]
 requires-dist = [
     { name = "firewatcher", specifier = "==1.59" },
-    { name = "hpcp", specifier = "==9.66" },
+    { name = "hpcp", specifier = "==9.72" },
     { name = "multicmd", specifier = "==1.53" },
     { name = "multissh3", specifier = "==6.27" },
     { name = "simple-iotest", specifier = "==3.69.1" },
@@ -46,16 +46,16 @@ wheels = [
 
 [[package]]
 name = "hpcp"
-version = "9.66"
+version = "9.72"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "multicmd" },
     { name = "xxhash", version = "3.2.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.7'" },
     { name = "xxhash", version = "3.5.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.7'" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/27/e4/aaccb4fe55a3c1ab2c8655a113bef96f778c84ec98793f98e9e9dbb7b248/hpcp-9.66.tar.gz", hash = "sha256:a989f555e2cba2bb9516678597baa33588dc74ab0bcadd2502721df418f88f19", size = 142890, upload-time = "2026-10-11T05:20:02.132Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/9e/64/247c6d763f8d981053ec8feba3a5b96ae215ce48250b91e3888022f6b75a/hpcp-9.72.tar.gz", hash = "sha256:fef931e624aa1f7dcfd389c9018150a67fb450533b198b580a63f5d9efd16cfa", size = 271291, upload-time = "2026-10-13T00:43:44.56Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/5b/42/9bf07e2391ee93015dac0c3f925bac87d1a8b2a494e050a5ce7f9dc6f52a/hpcp-9.66-py3-none-any.whl", hash = "sha256:d6ccfc351f7bedb7f71f6786f283b96f9095509c4744d47d9a4d648ec7392ad8", size = 93848, upload-time = "2026-10-11T05:20:00.761Z" },
+    { url = "https://files.pythonhosted.org/packages/6e/b0/4cc963453151f7d7505eac6460407a318d1f316486ad59d786d8e0b51043/hpcp-9.72-py3-none-any.whl", hash = "sha256:23a774b1f8630f48ea1ceb4342b18dfbf3d068db0e2730c5992f87bc42a984a1", size = 141175, upload-time = "2026-10-13T00:43:43.202Z" },
 ]
 
 [[package]]
