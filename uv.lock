@@ -8,7 +8,7 @@ resolution-markers = [
 
 [[package]]
 name = "cas-toolbox"
-version = "2026.42.1"
+version = "2026.42.2"
 source = { virtual = "." }
 dependencies = [
     { name = "firewatcher" },
@@ -25,7 +25,7 @@ dependencies = [
 [package.metadata]
 requires-dist = [
     { name = "firewatcher", specifier = "==1.59" },
-    { name = "hpcp", specifier = "==9.72" },
+    { name = "hpcp", specifier = "==9.73" },
     { name = "multicmd", specifier = "==1.53" },
     { name = "multissh3", specifier = "==6.31" },
     { name = "simple-iotest", specifier = "==3.69.1" },
@@ -46,16 +46,16 @@ wheels = [
 
 [[package]]
 name = "hpcp"
-version = "9.72"
+version = "9.73"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "multicmd" },
     { name = "xxhash", version = "3.2.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.7'" },
     { name = "xxhash", version = "3.5.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.7'" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/9e/64/247c6d763f8d981053ec8feba3a5b96ae215ce48250b91e3888022f6b75a/hpcp-9.72.tar.gz", hash = "sha256:fef931e624aa1f7dcfd389c9018150a67fb450533b198b580a63f5d9efd16cfa", size = 271291, upload-time = "2026-10-13T00:43:44.56Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/82/2a/10da1827798aaceee621d38dbfb9f57df09081b587e5d4c2cf8cdee9e786/hpcp-9.73.tar.gz", hash = "sha256:9c1afe3b88bcc0e28643b5c147d9a5ac2cb14927178b4439d6a2c683836c041c", size = 332082, upload-time = "2026-10-16T22:36:14.671Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/6e/b0/4cc963453151f7d7505eac6460407a318d1f316486ad59d786d8e0b51043/hpcp-9.72-py3-none-any.whl", hash = "sha256:23a774b1f8630f48ea1ceb4342b18dfbf3d068db0e2730c5992f87bc42a984a1", size = 141175, upload-time = "2026-10-13T00:43:43.202Z" },
+    { url = "https://files.pythonhosted.org/packages/d0/62/d3bfb895910d73247e6d9d2ab5b132cb08ba996131f7dd6c874220427c2a/hpcp-9.73-py3-none-any.whl", hash = "sha256:3ded7600815a9cbaebeb5f17c08f1b1d80cfb7678619d578fcb2faa0ac48fb05", size = 168430, upload-time = "2026-10-16T22:36:13.192Z" },
 ]
 
 [[package]]
