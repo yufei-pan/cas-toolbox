@@ -8,7 +8,7 @@ dependencies = [
     "hpcp==9.73",
     "multicmd==1.53",
     "multissh3==6.31",
-    "simple-iotest==3.69.1",
+    "simple-iotest==3.70.0",
     "statbtrfs==0.35",
     "tee-logger==6.42",
     "tsvz==4.7",

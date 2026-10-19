@@ -59,7 +59,7 @@ Versions listed are the ones **pinned by the current release** of `cas-toolbox`.
 | [hpcp](https://github.com/yufei-pan/hpcp) | `hpcp.py` | [`hpcp`](https://pypi.org/project/hpcp/) | 9.73 | `hpcp` | Highly-parallel `cp` / imaging for HPC storage |
 | [multiCMD](https://github.com/yufei-pan/multiCMD) | `multiCMD.py` | [`multicmd`](https://pypi.org/project/multiCMD/) | 1.53 | `mcmd`, `multicmd`, `multiCMD` | Run many subprocesses in parallel (base library) |
 | [multiSSH3](https://github.com/yufei-pan/multiSSH3) | `multiSSH3.py` | [`multissh3`](https://pypi.org/project/multissh3/) | 6.31 | `mssh`, `mssh3`, `multissh`, `multissh3`, `multiSSH3`, `mssh-complete` | Parallel SSH across hosts, curses TUI |
-| [simple-iotest](https://github.com/yufei-pan/simple-iotest) | `iotest.py` | [`simple-iotest`](https://pypi.org/project/simple-iotest/) | 3.69.1 | `iotest`, `simple-iotest` | Dead-simple filesystem I/O benchmark |
+| [simple-iotest](https://github.com/yufei-pan/simple-iotest) | `iotest.py` | [`simple-iotest`](https://pypi.org/project/simple-iotest/) | 3.70.0 | `iotest`, `simple-iotest` | Dead-simple filesystem I/O benchmark |
 | [statbtrfs](https://github.com/yufei-pan/statbtrfs) | `statbtrfs.py` | [`statbtrfs`](https://pypi.org/project/statbtrfs/) | 0.35 | `statbtrfs` | Btrfs status / scrub orchestration |
 | [Tee_Logger](https://github.com/yufei-pan/Tee_Logger) | `src/Tee_Logger.py` | [`tee-logger`](https://pypi.org/project/tee-logger/) | 6.42 | *(library only)* | Logger that tees to dated files + stdout |
 | [TSVZ](https://github.com/tsvz-org/TSVZ) | `TSVZ.py` | [`tsvz`](https://pypi.org/project/tsvz/) | 4.7 | `tsvz`, `TSVZ` | Key-value store / in-memory DB backed by a TSV file |
