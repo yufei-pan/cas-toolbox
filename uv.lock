@@ -8,7 +8,7 @@ resolution-markers = [
 
 [[package]]
 name = "cas-toolbox"
-version = "2026.42.2"
+version = "2026.43.1"
 source = { virtual = "." }
 dependencies = [
     { name = "firewatcher" },
@@ -24,56 +24,56 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "firewatcher", specifier = "==1.59" },
-    { name = "hpcp", specifier = "==9.73" },
-    { name = "multicmd", specifier = "==1.53" },
-    { name = "multissh3", specifier = "==6.31" },
+    { name = "firewatcher", specifier = "==1.60" },
+    { name = "hpcp", specifier = "==9.78" },
+    { name = "multicmd", specifier = "==1.54" },
+    { name = "multissh3", specifier = "==6.37" },
     { name = "simple-iotest", specifier = "==3.70.0" },
-    { name = "statblk", specifier = "==1.54" },
-    { name = "statbtrfs", specifier = "==0.35" },
+    { name = "statblk", specifier = "==1.55" },
+    { name = "statbtrfs", specifier = "==0.36" },
     { name = "tee-logger", specifier = "==6.42" },
-    { name = "tsvz", specifier = "==4.7" },
+    { name = "tsvz", specifier = "==4.9" },
 ]
 
 [[package]]
 name = "firewatcher"
-version = "1.59"
+version = "1.60"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/02/09/c4c165414047dff9ad281445fc51d9398f07b8f6bb46adfa5b4a46c13bc1/firewatcher-1.59.tar.gz", hash = "sha256:22c7c3b6698395afd6120a8cc82959a218fa16ce8c7e37517b3bba29cf0d3d62", size = 40116, upload-time = "2026-10-10T23:03:51.709Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/81/2a/e60ff6b3638d53983440c51e2a75184dd075545550b2f4361298bd70abee/firewatcher-1.60.tar.gz", hash = "sha256:b0c83253973db0308278bc23f85d15958073bcc13eb55085286a4515c1e1d6f5", size = 52542, upload-time = "2026-10-16T20:31:06.755Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/7a/91/dc5687e96790ea26f0b2e330faac7da4039ef6eb2941610551022fcaa26d/firewatcher-1.59-py3-none-any.whl", hash = "sha256:638edc65de587f8c01244f91c78267e88e0709c7d4d1f2197d9d725fa9834a05", size = 21525, upload-time = "2026-10-10T23:03:50.525Z" },
+    { url = "https://files.pythonhosted.org/packages/a4/ad/7d1dc3d0dd7873edbc9aea10c1532a146d723cd41f9287bb5a6abb6088f6/firewatcher-1.60-py3-none-any.whl", hash = "sha256:4a3c192131d2b7640aae53282074246e49dfce50666c938985dc2c1a0e175221", size = 33873, upload-time = "2026-10-16T20:31:05.749Z" },
 ]
 
 [[package]]
 name = "hpcp"
-version = "9.73"
+version = "9.78"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "multicmd" },
     { name = "xxhash", version = "3.2.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.7'" },
     { name = "xxhash", version = "3.5.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.7'" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/82/2a/10da1827798aaceee621d38dbfb9f57df09081b587e5d4c2cf8cdee9e786/hpcp-9.73.tar.gz", hash = "sha256:9c1afe3b88bcc0e28643b5c147d9a5ac2cb14927178b4439d6a2c683836c041c", size = 332082, upload-time = "2026-10-16T22:36:14.671Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/69/66/50f2454925138e06f4f05eebaed10854d3c448d129ed26c629cbc30b106a/hpcp-9.78.tar.gz", hash = "sha256:3704c76ef9b4d82eb3dbe24b96f3fa15ad99b20d2f7846a855cf0b28827d0703", size = 362264, upload-time = "2026-10-20T01:52:32.682Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/d0/62/d3bfb895910d73247e6d9d2ab5b132cb08ba996131f7dd6c874220427c2a/hpcp-9.73-py3-none-any.whl", hash = "sha256:3ded7600815a9cbaebeb5f17c08f1b1d80cfb7678619d578fcb2faa0ac48fb05", size = 168430, upload-time = "2026-10-16T22:36:13.192Z" },
+    { url = "https://files.pythonhosted.org/packages/85/bf/dcace336e2b614260f8eded0e131e467ac5b77d1adf649e5f151b92a51e2/hpcp-9.78-py3-none-any.whl", hash = "sha256:17fce609149c74ae7be55af27f521b1a1b8eb67a36b4b031109dbd1a9ade78fe", size = 179783, upload-time = "2026-10-20T01:52:31.134Z" },
 ]
 
 [[package]]
 name = "multicmd"
-version = "1.53"
+version = "1.54"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/38/01/ac8acba9861ce6a54ea3ab07aef31c3adb975e873c685008b60faa676633/multicmd-1.53.tar.gz", hash = "sha256:89dfeac3c4444b1b0e9b4c7637a403ea44da220818b8d6d0c235e78187dd3892", size = 53954, upload-time = "2026-10-12T03:22:01.338Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/c1/34/dbaac7a29ca7c04ca433be1b1d67363266a69498ff7692958173f11e87ea/multicmd-1.54.tar.gz", hash = "sha256:4cf0f1a724a8295477f2db3d94227e4098ee239388ec1f36f203bfabc5d954e8", size = 66431, upload-time = "2026-10-16T20:30:54.488Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/e4/f5/aeb151f8703267d544f3145d2a8891f45244d2aa414a1d5dd9fe509cc025/multicmd-1.53-py3-none-any.whl", hash = "sha256:ccc89dcdbcb8a4b8384a12809428a1e0402c5a1c176506c5756ff355f78f7f26", size = 33514, upload-time = "2026-10-12T03:22:00.112Z" },
+    { url = "https://files.pythonhosted.org/packages/3c/3e/d53a65ba281871a717f664e1601451401b10b011cfc71d70b565452090d6/multicmd-1.54-py3-none-any.whl", hash = "sha256:bf8d8894d3409fa5f1426695f6e104a3feae7e71f8b9edf334f0d4f79f8e5840", size = 45867, upload-time = "2026-10-16T20:30:53.356Z" },
 ]
 
 [[package]]
 name = "multissh3"
-version = "6.31"
+version = "6.37"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/a0/79/723652c82c2af0f56bb20faf42b944cda58d8192ff7693869c43957d9c44/multissh3-6.31.tar.gz", hash = "sha256:f25197b4e87b5246dece2712fb35bd56db25413d5658b6008b6f3eedca64258a", size = 268273, upload-time = "2026-10-13T07:46:13.103Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/ac/75/a3ee8ef814f8f9783644011e88e55dced4309dec364dd335dc8f75bd18c5/multissh3-6.37.tar.gz", hash = "sha256:34c1db2c4396cd97a7df10b31975df62cdcc35e4bd26977a01e8608535958096", size = 680218, upload-time = "2026-10-21T11:49:39.642Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/33/2a/6ac1cd2dc1952e2e5e90280548bad1371715aebb4cdc1c0c4b6eb25ab867/multissh3-6.31-py3-none-any.whl", hash = "sha256:36c7643c92aaf99d947c06aa238dbfc1c82598ab2e902cd56b02294cf9e18efd", size = 150851, upload-time = "2026-10-13T07:46:11.788Z" },
+    { url = "https://files.pythonhosted.org/packages/94/39/972834a1e132473886bac2b3865eebd0456608347cf3e2513b167e81f3b5/multissh3-6.37-py3-none-any.whl", hash = "sha256:b2ea59083996214ecac5ded5b96e9f5b34a1900e9616c6076f2c490cdafe83f8", size = 287268, upload-time = "2026-10-21T11:49:38.023Z" },
 ]
 
 [[package]]
@@ -90,26 +90,26 @@ wheels = [
 
 [[package]]
 name = "statblk"
-version = "1.54"
+version = "1.55"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "multicmd" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/3a/d1/c85e91596e8010f6bafe206c5a22d66d4b081873fd61874f32a7fe30055d/statblk-1.54.tar.gz", hash = "sha256:d60a4d742f54ccc45081e961f8378ce4a482d727c534d472633d169adb588a67", size = 52137, upload-time = "2026-10-12T03:22:06.79Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/ff/ce/bf84a069abcedf9f5c2ba6a22ba68739c29665581f78d0792e3c41bead98/statblk-1.55.tar.gz", hash = "sha256:d8ba91a270326d024fa0582bed588789bd0b34fc90003b13f2c4958c9c32e402", size = 64537, upload-time = "2026-10-16T20:31:01.203Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/89/99/3e421a1347969e6ad06b3089256ca1a2d287b89cc7ca7cb02428dc6fb408/statblk-1.54-py3-none-any.whl", hash = "sha256:f54cc6549608b0928b41c6331c2d7d7aa6682965e6d65a3c222a4995b916447c", size = 36006, upload-time = "2026-10-12T03:22:05.443Z" },
+    { url = "https://files.pythonhosted.org/packages/a5/5e/74be0b369b6696b01bca8ae9082d104cba071e22e8fde4b79533ed469f1d/statblk-1.55-py3-none-any.whl", hash = "sha256:9409329ef0758c6634b3a8caacaf7dd1fd3c489ba0f4d4a712e13559a5b74adc", size = 48377, upload-time = "2026-10-16T20:31:00.091Z" },
 ]
 
 [[package]]
 name = "statbtrfs"
-version = "0.35"
+version = "0.36"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "multicmd" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/44/7f/3935694faea92cb9086a428465c064b7a96c30157b16fce6e7ee7d1bf7f3/statbtrfs-0.35.tar.gz", hash = "sha256:f85da510b87dc1f82ec58c6852933ad4bd8778225d5b8bc025efb78a0c67999f", size = 36425, upload-time = "2026-10-12T03:22:09.799Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/b5/2c/1d6b53b83a657e8d3d194001099e49fb643720f7898f030fcf882adf1853/statbtrfs-0.36.tar.gz", hash = "sha256:eac90a18999585a11bbb1e57036318987fce22c27c64f42fe7900de66d5bd764", size = 50145, upload-time = "2026-10-16T20:31:03.887Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/d5/c0/749c8c63cdc1991ed5673a3a60876451b894f3faa7bc7c71943db85ce798/statbtrfs-0.35-py3-none-any.whl", hash = "sha256:21c50b73cff0933c898091fab8405d61d9393e175c32a343abda4c1ddf7e9f02", size = 24491, upload-time = "2026-10-12T03:22:08.624Z" },
+    { url = "https://files.pythonhosted.org/packages/d1/d9/5a646abf95c61cc7d447e11f387eff52667629d5703d4d92a27ca9b3516d/statbtrfs-0.36-py3-none-any.whl", hash = "sha256:79fd0d016281e87adbe3053693bb88e9ded3f7e09efedb7d26dee4d31f61cf8f", size = 36853, upload-time = "2026-10-16T20:31:02.875Z" },
 ]
 
 [[package]]
@@ -123,11 +123,11 @@ wheels = [
 
 [[package]]
 name = "tsvz"
-version = "4.7"
+version = "4.9"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/eb/4c/fc68d33e1b8500ea90e9731e7c9c56eb7dcfc726fbe9ff984c924241ff74/tsvz-4.7.tar.gz", hash = "sha256:4d96a0f7da1cc2be5fc1bec148b3852941fb9f9a373072721c615a67178ae0db", size = 90592, upload-time = "2026-10-13T07:45:58.266Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/b1/1c/b30e23eb271207dd1774f5b9784fc4ce23f3a545f90d114f55c8ab0ebaf7/tsvz-4.9.tar.gz", hash = "sha256:e6660f0300a062e1435f18ffab56847be274dc4ce4d2b778addf8522d167e17f", size = 107411, upload-time = "2026-10-17T00:53:32.107Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/68/67/a1733588163341002059526dbdac71dd92bcd6900823e451a40c1fd37f04/tsvz-4.7-py3-none-any.whl", hash = "sha256:1ab7b12f69bcb6a7c228bcb1a84e7ac1a9ae078d3f91e8b0a9311942099341be", size = 89597, upload-time = "2026-10-13T07:45:56.912Z" },
+    { url = "https://files.pythonhosted.org/packages/76/d0/ad981e6dee6be11c35a8128960d1a2c6fecb3d70a776bceb052e3b34cac3/tsvz-4.9-py3-none-any.whl", hash = "sha256:1d1ab9640fc70db458958ecfbec8797b4088819e892a5a44a45ecc116f3c4ca6", size = 106764, upload-time = "2026-10-17T00:53:30.622Z" },
 ]
 
 [[package]]
