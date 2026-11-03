@@ -8,7 +8,7 @@ resolution-markers = [
 
 [[package]]
 name = "cas-toolbox"
-version = "2026.45.1"
+version = "2026.45.2"
 source = { virtual = "." }
 dependencies = [
     { name = "firewatcher" },
@@ -24,7 +24,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "firewatcher", specifier = "==1.64" },
+    { name = "firewatcher", specifier = "==1.65" },
     { name = "hpcp", specifier = "==9.80" },
     { name = "multicmd", specifier = "==1.56" },
     { name = "multissh3", specifier = "==6.39" },
@@ -37,11 +37,11 @@ requires-dist = [
 
 [[package]]
 name = "firewatcher"
-version = "1.64"
+version = "1.65"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/e6/57/76df8b1047a10c9cace7c1422479eea4d64443c7a80cff561ae75bc0cccf/firewatcher-1.64.tar.gz", hash = "sha256:4c9013bac8f52a53220f8eda12333dfb80466deb7801931acbc016557cb24c2d", size = 118347, upload-time = "2026-10-28T05:05:15.883Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/58/4e/519460c476568c4e48834d557ba09d1cb9bc1bf6079f9de230c114fe7417/firewatcher-1.65.tar.gz", hash = "sha256:092bbf361843447fa3fea110d82f548d1048702ece95709f2d113ca499daa69f", size = 130387, upload-time = "2026-11-03T22:47:32.863Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/51/e0/1d63abd28352f8735d5875b18842900708c28b62302dd57490a398fa7595/firewatcher-1.64-py3-none-any.whl", hash = "sha256:992e6f237d7d8c1b9e999a3782e4fcc173609d50c3a5a92321bced032439c8fa", size = 61903, upload-time = "2026-10-28T05:05:14.484Z" },
+    { url = "https://files.pythonhosted.org/packages/5a/ae/70734136e5e79300449330acbc0719b68a01019cbac92d5f261bed00122d/firewatcher-1.65-py3-none-any.whl", hash = "sha256:7f594f9f2867eac14bf55b33948403a5f26e053233a86547c5e5372637c5c276", size = 65896, upload-time = "2026-11-03T22:47:31.75Z" },
 ]
 
 [[package]]
