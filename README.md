@@ -145,10 +145,20 @@ To install one tool on its own, install its PyPI package directly instead of thi
 meta-package.
 
 Upgrading from cas-toolbox 2026.45.3 or earlier with pip 9, the pip of EL7 and EL8
-(`pip3 --version`), fails with `configparser.DuplicateOptionError: ... option 'multicmd'
-in section 'console_scripts' already exists`, and so does `pip3 uninstall cas-toolbox`
-for those releases; the installed release keeps working. Run `pip3 install -U pip` once
-(`--user` for a user install), then upgrade as usual.
+(`pip3 --version`), stops with `configparser.DuplicateOptionError: ... option 'multicmd'
+in section 'console_scripts' already exists`, with or without `--user`; the name can also
+be `multissh3` or `tsvz`, and can change from run to run. `pip3 uninstall cas-toolbox` of
+those releases stops the same way, always naming `multicmd`. The installed release keeps
+working. Run `pip3 install -U pip` once (`pip3 install --user -U pip` for a user install),
+then upgrade as usual.
+
+In a venv whose path has a space, or is too long for the kernel's `#!` line, `multiCMD`,
+`multiSSH3` and `TSVZ` fail with "bad interpreter": use `multicmd`, `multissh3` and `tsvz`.
+uv and system or `--user` installs are not affected.
+
+`pip3 uninstall cas-toolbox` removes all 17 commands and leaves the tools installed, because
+the toolbox owns those files. `pip3 install -U --force-reinstall --no-deps multiCMD`, and the
+same for each other tool, brings that tool's commands back.
 
 ## Commands provided
 
