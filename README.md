@@ -152,9 +152,11 @@ those releases stops the same way, always naming `multicmd`. The installed relea
 working. Run `pip3 install -U pip` once (`pip3 install --user -U pip` for a user install),
 then upgrade as usual.
 
-In a venv whose path has a space, or is too long for the kernel's `#!` line, `multiCMD`,
-`multiSSH3` and `TSVZ` fail with "bad interpreter": use `multicmd`, `multissh3` and `tsvz`.
-uv and system or `--user` installs are not affected.
+With pip 10 or later, in a venv whose path has a space or is too long for the kernel's `#!`
+line, `multiCMD`, `multiSSH3` and `TSVZ` do not start (the error varies: "bad interpreter",
+`import: command not found`): use `multicmd`, `multissh3` and `tsvz`. With pip 9 no command
+starts in such a venv, as in earlier releases. uv and system or `--user` installs are not
+affected.
 
 `pip3 uninstall cas-toolbox` removes all 17 commands and leaves the tools installed, because
 the toolbox owns those files. `pip3 install -U --force-reinstall --no-deps multiCMD`, and the

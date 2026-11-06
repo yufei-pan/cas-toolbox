@@ -11,8 +11,8 @@ Approved known limitations and deferrals. Reviewers: read this first, and don't 
 
 ### Mixed-case commands in a venv with a space in its path
 - Kind: known limitation
-- What the operator sees: in a venv whose path has a space, or is too long for the kernel's `#!` line, `multiCMD`, `multiSSH3` and `TSVZ` fail with "bad interpreter", and the 14 other commands work: use `multicmd`, `multissh3` and `tsvz`. uv and system or `--user` installs are not affected.
-- Why: pip writes a plain `#!<python>` line into a script file and a `/bin/sh` wrapper only for an entry point, and a launcher that delegates to the lowercase twin overwrites it on a case-insensitive disk under uv.
+- What the operator sees: With pip 10 or later, in a venv whose path has a space or is too long for the kernel's `#!` line, `multiCMD`, `multiSSH3` and `TSVZ` do not start (the error varies: "bad interpreter", `import: command not found`): use `multicmd`, `multissh3` and `tsvz`. With pip 9 no command starts in such a venv, as in earlier releases. uv and system or `--user` installs are not affected.
+- Why: pip writes a plain `#!<python>` line into a script file and a `/bin/sh` wrapper only for an entry point. A launcher that delegates to the lowercase twin overwrites it on a case-insensitive disk under uv. One that execs `mcmd` or `mssh` works, but prints that name for `-V`, breaks `python3 $(which multiCMD)`, and TSVZ has no such sibling.
 - Revisit when: someone hits it.
 - Approved: 2026-11-06, the user chose "Known limitation (Recommended)".
 
