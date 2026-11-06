@@ -108,8 +108,9 @@ with reduced functionality or performance.
 | `resource` | `multiSSH3`, `TSVZ` | Resource-usage reporting |
 | `argcomplete` | `TSVZ`, `statblk`, `statbtrfs` | Shell tab completion (`pip install '<tool>[completion]'`) |
 
-`xxhash` is declared by `hpcp` but imported defensively, so `hpcp` still works
-without it.
+`xxhash` is declared by `hpcp` on Python 3.7 and later, and imported defensively,
+so `hpcp` works without it. On Python 3.6 (EL7 and EL8) it is not installed, because
+building it there needs a compiler; `pip3 install xxhash` adds it.
 
 ## Installation
 
@@ -142,6 +143,12 @@ uv add cas-toolbox
 
 To install one tool on its own, install its PyPI package directly instead of this
 meta-package.
+
+Upgrading from cas-toolbox 2026.45.3 or earlier with pip 9, the pip of EL7 and EL8
+(`pip3 --version`), fails with `configparser.DuplicateOptionError: ... option 'multicmd'
+in section 'console_scripts' already exists`, and so does `pip3 uninstall cas-toolbox`
+for those releases; the installed release keeps working. Run `pip3 install -U pip` once
+(`--user` for a user install), then upgrade as usual.
 
 ## Commands provided
 
