@@ -29,8 +29,8 @@ requires-dist = [
     { name = "multicmd", specifier = "==1.58" },
     { name = "multissh3", specifier = "==6.44" },
     { name = "simple-iotest", specifier = "==3.70.0" },
-    { name = "statblk", specifier = "==1.59" },
-    { name = "statbtrfs", specifier = "==0.39" },
+    { name = "statblk", specifier = "==1.60" },
+    { name = "statbtrfs", specifier = "==0.40" },
     { name = "tee-logger", specifier = "==6.44" },
     { name = "tsvz", specifier = "==5.6" },
 ]
@@ -89,26 +89,26 @@ wheels = [
 
 [[package]]
 name = "statblk"
-version = "1.59"
+version = "1.60"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "multicmd" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/79/06/3ff64337e6bda2531f017c057ad60f38eefe0e244cb43c19bd966ca90dda/statblk-1.59.tar.gz", hash = "sha256:8de348b8add565fb9b0f17467cae1c1ffc648d7fa94c8d385d9aca7ff8b8c2f0", size = 70818, upload-time = "2026-11-06T21:48:42.918Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/8c/df/ae941e4803700f0c056c7b2bd474c0fb8c50053234f738e3089a3554e2f2/statblk-1.60.tar.gz", hash = "sha256:784a9c83936b51b347f9ad78018edd82f864f301cab5d887a8a6dfde3978b9f8", size = 71697, upload-time = "2026-11-07T05:24:55.157Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/81/13/4e9ed96e1ae3964cc7527ce7364d8f2e455d992176022cd2c7b466e8e80e/statblk-1.59-py3-none-any.whl", hash = "sha256:3f4adffd839c62a560e3f76041392991acdb2d522d9a33447a3ed8f7fb44d388", size = 54293, upload-time = "2026-11-06T21:48:41.831Z" },
+    { url = "https://files.pythonhosted.org/packages/7b/b7/d4dc1d4cc0fdad87d05acb39fa34077a3faf2322effb01529172287ca97b/statblk-1.60-py3-none-any.whl", hash = "sha256:6e3096bbe145cfedda981aa1ff987b0373002c9743f0a827c3cb6286a9c0b5df", size = 54532, upload-time = "2026-11-07T05:24:53.911Z" },
 ]
 
 [[package]]
 name = "statbtrfs"
-version = "0.39"
+version = "0.40"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "multicmd" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/1d/91/8c97483cf5d17fd06252b0934eb8120434148b18edddc676c4ab32d1ca55/statbtrfs-0.39.tar.gz", hash = "sha256:7cb702dd43ef13e26156e3e542c68fbaf75a7ca19f183afef7ebdf1d15e221fa", size = 55110, upload-time = "2026-11-06T21:48:46.759Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/a2/bf/9ab5280e667e819d39dbc57b106fd4d8f4406cf2a712a468880c5dc67647/statbtrfs-0.40.tar.gz", hash = "sha256:e47c2d94f41bea1deee6fbb2016866d62495705e9c6471bdbfe383bee3f63051", size = 58914, upload-time = "2026-11-07T05:28:13.629Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/e8/05/040d050d84cd5688820a62b488bfbb67c693edb86bb0fde0b44ef939094c/statbtrfs-0.39-py3-none-any.whl", hash = "sha256:0825533b6b909600948fcb854c1d6d5fdc177938d2c2310bbde3c4c441116559", size = 42167, upload-time = "2026-11-06T21:48:45.733Z" },
+    { url = "https://files.pythonhosted.org/packages/db/ec/326642e7db2ea3cf2c8b152e07f4002c1832cfbfe0e99e4d40c60a390657/statbtrfs-0.40-py3-none-any.whl", hash = "sha256:ab98f869f92bfb064550b601a48911206b09182a7ecc9c95dd64dfaf38992404", size = 43901, upload-time = "2026-11-07T05:28:12.579Z" },
 ]
 
 [[package]]

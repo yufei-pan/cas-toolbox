@@ -9,10 +9,10 @@ dependencies = [
     "multicmd==1.58",
     "multissh3==6.44",
     "simple-iotest==3.70.0",
-    "statbtrfs==0.39",
+    "statbtrfs==0.40",
     "tee-logger==6.44",
     "tsvz==5.6",
-    "statblk==1.59",
+    "statblk==1.60",
     "firewatcher==1.66",
 ]
 authors = [
