@@ -121,6 +121,15 @@ Use pip:
 pip install cas-toolbox
 ```
 
+On EL7 and EL8, run `python3 -m pip install --user -U pip` once before a `--user` install or
+upgrade. The stock pip there (9.0.3 on Python 3.6, and the python38 and python39 pips) leaves
+the old version's record behind on any `pip3 install --user -U`, for any package. A later
+`pip3 uninstall cas-toolbox` then removes the commands but leaves the old version listed, and
+`pip3 install --user cas-toolbox` answers "Requirement already satisfied" and brings nothing
+back. If that has happened, run `pip3 uninstall cas-toolbox` again until pip says it is not
+installed, then install again. A venv, a system-wide install, and an upgrade to a pinned
+version (`cas-toolbox==2026.46.1`) are not affected. The cause is a Red Hat patch to pip.
+
 Use pipx:
 
 ```bash
