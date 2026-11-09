@@ -10,13 +10,13 @@ description = "Cluster Automation Scripts Toolbox"
 readme = "README.md"
 requires-python = ">=3.6"
 dependencies = [
-    "hpcp==9.83",
+    "hpcp==9.84",
     "multicmd==1.58",
-    "multissh3==6.44",
+    "multissh3==6.46",
     "simple-iotest==3.70.0",
-    "statbtrfs==0.40",
+    "statbtrfs==0.43",
     "tee-logger==6.44",
-    "tsvz==5.7",
+    "tsvz==5.9",
     "statblk==1.60",
     "firewatcher==1.66",
 ]

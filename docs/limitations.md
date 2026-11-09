@@ -22,3 +22,16 @@ Approved known limitations and deferrals. Reviewers: read this first, and don't 
 - Why: the toolbox owns those command files. Without that, the upgrade from 2026.45.3 left 0 of 17 commands, and `uv tool install` and `pipx install` refused the package.
 - Revisit when: the toolbox stops owning commands.
 - Approved: 2026-11-06, the user chose "Known limitation (Recommended)".
+
+### EL7 and EL8's stock pip leaves an old version behind on a --user upgrade
+- Kind: known limitation
+- What the operator sees: on EL7 or EL8, an operator who skips the README's `python3 -m pip install --user -U pip` step and runs
+  `pip3 install --user -U cas-toolbox` gets the new version installed beside the old version's record. A later
+  `pip3 uninstall cas-toolbox` removes the commands but leaves the old version listed, and `pip3 install --user cas-toolbox` answers
+  "Requirement already satisfied" and brings nothing back. Recovery: run `pip3 uninstall cas-toolbox` again until pip says it is not
+  installed, then install again. A venv, a system-wide install, and an upgrade to a pinned version are not affected.
+- Why: Red Hat's `remove-existing-dist-only-if-path-conflicts.patch` to python3-pip 9.0.3 (and the python38/python39 pips) skips
+  the uninstall of a version that lives in the user site. Nothing in our package can change how that pip upgrades. A report for
+  Red Hat (RHEL 8's python-pip) is drafted for the user to file.
+- Revisit when: Red Hat fixes the patch, or EL's stock pip stops being 9.
+- Approved: 2026-11-08, the user chose "Approve (Recommended)".
