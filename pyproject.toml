@@ -13,12 +13,12 @@ dependencies = [
     "hpcp==9.84",
     "multicmd==1.58",
     "multissh3==6.46",
-    "simple-iotest==3.70.0",
+    "simple-iotest==3.70.1",
     "statbtrfs==0.43",
-    "tee-logger==6.44",
+    "tee-logger==6.45",
     "tsvz==5.9",
     "statblk==1.60",
-    "firewatcher==1.66",
+    "firewatcher==1.67",
 ]
 authors = [
     { name = "Yufei Pan", email = "pan@zopyr.us" }
