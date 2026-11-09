@@ -1,50 +1,57 @@
+[build-system]
+# 77.0.1: the first setuptools on PyPI that reads `license` as an SPDX string (76.1.0 refuses it; 77.0.0 was never published).
+requires = ["setuptools>=77.0.1"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "cas-toolbox"
-version = "2026.45.3"
+version = "2026.46.1"
 description = "Cluster Automation Scripts Toolbox"
 readme = "README.md"
 requires-python = ">=3.6"
 dependencies = [
-    "hpcp==9.80",
-    "multicmd==1.56",
-    "multissh3==6.39",
-    "simple-iotest==3.70.0",
-    "statbtrfs==0.38",
-    "tee-logger==6.44",
-    "tsvz==5.0",
-    "statblk==1.58",
-    "firewatcher==1.66",
+    "hpcp==9.84",
+    "multicmd==1.58",
+    "multissh3==6.46",
+    "simple-iotest==3.70.1",
+    "statbtrfs==0.43",
+    "tee-logger==6.45",
+    "tsvz==5.9",
+    "statblk==1.60",
+    "firewatcher==1.67",
 ]
 authors = [
     { name = "Yufei Pan", email = "pan@zopyr.us" }
 ]
 classifiers = [
-    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.6",
     "Operating System :: POSIX :: Linux",
 ]
-license = {text = "GPL-3.0-or-later"}
+license = "GPL-3.0-or-later"
 
 [project.scripts]
 hpcp = "hpcp:main"
 mcmd = "multiCMD:main"
 multicmd = "multiCMD:main"
-multiCMD = "multiCMD:main"
 mssh = "multiSSH3:main"
 mssh3 = "multiSSH3:main"
 multissh = "multiSSH3:main"
 multissh3 = "multiSSH3:main"
-multiSSH3 = "multiSSH3:main"
 mssh-complete = "mssh_complete:main"
 iotest = "iotest:climain"
 simple-iotest = "iotest:climain"
 statbtrfs = "statbtrfs:main"
-TSVZ = "TSVZ:__main__"
 tsvz = "TSVZ:__main__"
 statblk = "statblk:main"
 firewatcher = "firewatcher:main"
 
+
+# multiCMD, multiSSH3 and TSVZ (the mixed-case spellings) are script files here and not entry points: pip 9 (stock on EL7 and
+# EL8) cannot upgrade or uninstall a package whose entry_points.txt has two commands that differ only in case. This package
+# still owns all 17 commands, as the releases before it did: an upgrade from one keeps them, and uv and pipx find them here.
+[tool.setuptools]
+script-files = ["scripts/multiCMD", "scripts/multiSSH3", "scripts/TSVZ"]
 
 [project.urls]
 'Homepage' = "https://github.com/yufei-pan/cas-toolbox"
