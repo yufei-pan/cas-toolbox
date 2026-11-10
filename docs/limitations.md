@@ -31,7 +31,9 @@ Approved known limitations and deferrals. Reviewers: read this first, and don't 
   "Requirement already satisfied" and brings nothing back. Recovery: run `pip3 uninstall cas-toolbox` again until pip says it is not
   installed, then install again. A venv, a system-wide install, and an upgrade to a pinned version are not affected.
 - Why: Red Hat's `remove-existing-dist-only-if-path-conflicts.patch` to python3-pip 9.0.3 (and the python38/python39 pips) skips
-  the uninstall of a version that lives in the user site. Nothing in our package can change how that pip upgrades. A report for
-  Red Hat (RHEL 8's python-pip) is drafted for the user to file.
-- Revisit when: Red Hat fixes the patch, or EL's stock pip stops being 9.
-- Approved: 2026-11-08, the user chose "Approve (Recommended)".
+  the uninstall of a version that lives in the user site. Nothing in our package can change how that pip upgrades. No report was
+  filed with Red Hat: RHEL 8.10 is in its Maintenance Support phase (urgent and selected high-priority bug fixes only), RHEL 7 is
+  past it, and RHEL 9's stock pip (21.3.1, checked on Rocky 9 on 2026-11-10) uninstalls the old version as it should.
+- Revisit when: our operators leave EL7 and EL8 (RHEL 9 and later are not affected).
+- Approved: 2026-11-08, the user chose "Approve (Recommended)"; 2026-11-10, no Red Hat report, the user's words: "they are not
+  going to fix RHEL 8 any more as it is fixed in RHEL9 so I think we can make that a KL item".
