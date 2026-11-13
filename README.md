@@ -68,7 +68,7 @@ Versions listed are the ones **pinned by the current release** of `cas-toolbox`.
 
 Internal dependency graph worth knowing when a pin moves:
 
-- `multiCMD` is the foundation — `hpcp`, `statbtrfs` and `statblk` all depend on it.
+- `hpcp`, `statbtrfs` and `statblk` carry their own copy of `multiCMD` and use an installed one when it is at least as new, so the `multiCMD` pin is what they run in the toolbox: move it only beside versions of them tested with it.
 - `simple-iotest` depends on `tee-logger`.
 
 ## Recent releases
