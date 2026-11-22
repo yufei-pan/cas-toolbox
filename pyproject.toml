@@ -5,20 +5,20 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "cas-toolbox"
-version = "2026.47.1"
+version = "2026.48.1"
 description = "Cluster Automation Scripts Toolbox"
 readme = "README.md"
 requires-python = ">=3.6"
 dependencies = [
-    "hpcp==9.92",
-    "multicmd==1.64",
-    "multissh3==6.46",
-    "simple-iotest==3.70.1",
-    "statbtrfs==0.44",
+    "hpcp==9.96",
+    "multicmd==1.69",
+    "multissh3==6.47",
+    "simple-iotest==3.71.0",
+    "statbtrfs==0.45",
     "tee-logger==6.45",
     "tsvz==5.17",
-    "statblk==1.61",
-    "firewatcher==1.67",
+    "statblk==1.64",
+    "firewatcher==1.68",
 ]
 authors = [
     { name = "Yufei Pan", email = "pan@zopyr.us" }

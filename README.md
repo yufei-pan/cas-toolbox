@@ -20,8 +20,8 @@ autocomplete is the one exception: it needs `mssh_complete.py` next to
 
 | | |
 |---|---|
-| **Current version** | `2026.47.1` |
-| **Released** | 2026-11-16 |
+| **Current version** | `2026.48.1` |
+| **Released** | 2026-11-23 |
 | **Python** | >= 3.6 |
 | **Platform** | Linux (POSIX); macOS for `multiSSH3`, `simple-iotest`, `statblk`, `tee-logger`, `TSVZ` |
 | **License** | GPL-3.0-or-later |
@@ -56,15 +56,15 @@ Versions listed are the ones **pinned by the current release** of `cas-toolbox`.
 
 | Tool | Module | PyPI package | Pinned | Commands | What it does |
 |---|---|---|---|---|---|
-| [hpcp](https://github.com/yufei-pan/hpcp) | `hpcp.py` | [`hpcp`](https://pypi.org/project/hpcp/) | 9.92 | `hpcp` | Highly-parallel `cp` / imaging for HPC storage |
-| [multiCMD](https://github.com/yufei-pan/multiCMD) | `multiCMD.py` | [`multicmd`](https://pypi.org/project/multiCMD/) | 1.64 | `mcmd`, `multicmd`, `multiCMD` | Run many subprocesses in parallel (base library) |
-| [multiSSH3](https://github.com/yufei-pan/multiSSH3) | `multiSSH3.py` | [`multissh3`](https://pypi.org/project/multissh3/) | 6.46 | `mssh`, `mssh3`, `multissh`, `multissh3`, `multiSSH3`, `mssh-complete` | Parallel SSH across hosts, curses TUI |
-| [simple-iotest](https://github.com/yufei-pan/simple-iotest) | `iotest.py` | [`simple-iotest`](https://pypi.org/project/simple-iotest/) | 3.70.1 | `iotest`, `simple-iotest` | Dead-simple filesystem I/O benchmark |
-| [statbtrfs](https://github.com/yufei-pan/statbtrfs) | `statbtrfs.py` | [`statbtrfs`](https://pypi.org/project/statbtrfs/) | 0.44 | `statbtrfs` | Btrfs status / scrub orchestration |
+| [hpcp](https://github.com/yufei-pan/hpcp) | `hpcp.py` | [`hpcp`](https://pypi.org/project/hpcp/) | 9.96 | `hpcp` | Highly-parallel `cp` / imaging for HPC storage |
+| [multiCMD](https://github.com/yufei-pan/multiCMD) | `multiCMD.py` | [`multicmd`](https://pypi.org/project/multiCMD/) | 1.69 | `mcmd`, `multicmd`, `multiCMD` | Run many subprocesses in parallel (base library) |
+| [multiSSH3](https://github.com/yufei-pan/multiSSH3) | `multiSSH3.py` | [`multissh3`](https://pypi.org/project/multissh3/) | 6.47 | `mssh`, `mssh3`, `multissh`, `multissh3`, `multiSSH3`, `mssh-complete` | Parallel SSH across hosts, curses TUI |
+| [simple-iotest](https://github.com/yufei-pan/simple-iotest) | `iotest.py` | [`simple-iotest`](https://pypi.org/project/simple-iotest/) | 3.71.0 | `iotest`, `simple-iotest` | Dead-simple filesystem I/O benchmark |
+| [statbtrfs](https://github.com/yufei-pan/statbtrfs) | `statbtrfs.py` | [`statbtrfs`](https://pypi.org/project/statbtrfs/) | 0.45 | `statbtrfs` | Btrfs status / scrub orchestration |
 | [Tee_Logger](https://github.com/yufei-pan/Tee_Logger) | `src/Tee_Logger.py` | [`tee-logger`](https://pypi.org/project/tee-logger/) | 6.45 | *(library only)* | Logger that tees to dated files + stdout |
 | [TSVZ](https://github.com/tsvz-org/TSVZ) | `TSVZ.py` | [`tsvz`](https://pypi.org/project/tsvz/) | 5.17 | `tsvz`, `TSVZ` | Key-value store / in-memory DB backed by a TSV file |
-| [statblk](https://github.com/yufei-pan/statblk) | `statblk.py` | [`statblk`](https://pypi.org/project/statblk/) | 1.61 | `statblk` | Block-device / partition info table |
-| [firewatcher](https://github.com/yufei-pan/firewatcher) | `firewatcher.py` | [`firewatcher`](https://pypi.org/project/firewatcher/) | 1.67 | `firewatcher` | Journal/log incident capture with off-box context |
+| [statblk](https://github.com/yufei-pan/statblk) | `statblk.py` | [`statblk`](https://pypi.org/project/statblk/) | 1.64 | `statblk` | Block-device / partition info table |
+| [firewatcher](https://github.com/yufei-pan/firewatcher) | `firewatcher.py` | [`firewatcher`](https://pypi.org/project/firewatcher/) | 1.68 | `firewatcher` | Journal/log incident capture with off-box context |
 
 Internal dependency graph worth knowing when a pin moves:
 
