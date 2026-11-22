@@ -23,7 +23,7 @@ autocomplete is the one exception: it needs `mssh_complete.py` next to
 | **Current version** | `2026.48.1` |
 | **Released** | 2026-11-23 |
 | **Python** | >= 3.6 |
-| **Platform** | Linux (POSIX); macOS for `multiSSH3`, `simple-iotest`, `statblk`, `tee-logger`, `TSVZ` |
+| **Platform** | Linux (POSIX); macOS for `multiCMD`, `multiSSH3`, `simple-iotest`, `statblk`, `tee-logger`, `TSVZ` |
 | **License** | GPL-3.0-or-later |
 | **Author** | Yufei Pan (pan@zopyr.us) |
 | **Homepage** | [github.com/yufei-pan/cas-toolbox](https://github.com/yufei-pan/cas-toolbox) |
